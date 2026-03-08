@@ -1,0 +1,21 @@
+{
+  "userIgnoreFilters": [
+    ".venv/",
+    "node_modules/",
+    "__pycache__/",
+    "*.pem",
+    "API키값.txt",
+    ".omc/",
+    ".git/",
+    "workspace/",
+    "*.pyc",
+    ".env",
+    ".env.*",
+    "CLAUDE.md",
+    "AGENTS.md",
+    ".claude/"
+  ],
+  "attachmentFolderPath": ".",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false
+}

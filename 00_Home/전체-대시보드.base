@@ -1,0 +1,35 @@
+{
+  "headerConfig": {
+    "showAdd": true,
+    "showFilter": true,
+    "showSearch": true
+  },
+  "query": {
+    "folder": "",
+    "filterGroups": [
+      {
+        "id": "fg1",
+        "filters": [
+          {
+            "id": "f1",
+            "field": "type",
+            "operator": "is",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "order": [
+    {"field": "file.name", "direction": "asc"}
+  ],
+  "fieldConfig": {
+    "file.name": {"visible": true, "width": 250, "displayName": "노트"},
+    "type": {"visible": true, "width": 100, "displayName": "유형"},
+    "week": {"visible": true, "width": 80, "displayName": "주차"},
+    "topic": {"visible": true, "width": 150, "displayName": "주제"},
+    "status": {"visible": true, "width": 100, "displayName": "상태"},
+    "tags": {"visible": true, "width": 200, "displayName": "태그"}
+  },
+  "viewType": "table"
+}

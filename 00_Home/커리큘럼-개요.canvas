@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"group-phase1","type":"group","x":0,"y":0,"width":500,"height":300,"label":"Phase 1: 기초 (Week 01-02)"},
+		{"id":"group-phase2","type":"group","x":560,"y":0,"width":500,"height":300,"label":"Phase 2: 개발환경 (Week 03-04)"},
+		{"id":"group-phase3","type":"group","x":1120,"y":0,"width":500,"height":300,"label":"Phase 3: AI Engineering (Week 05-06)"},
+		{"id":"group-phase4","type":"group","x":1680,"y":0,"width":700,"height":300,"label":"Phase 4: 실전 (Week 07-09)"},
+		{"id":"w01","type":"text","x":40,"y":60,"width":200,"height":100,"text":"# Week 01\n**AI Literacy**\nAI 대화 설계, 산업별 AI 적용, AI 윤리","color":"1"},
+		{"id":"w02","type":"text","x":260,"y":60,"width":200,"height":100,"text":"# Week 02\n**자료구조/알고리즘**\n스택, 큐, 해시, 트리, 그래프, 정렬","color":"1"},
+		{"id":"w03","type":"text","x":600,"y":60,"width":200,"height":100,"text":"# Week 03\n**Git/Docker**\n개발환경, Git 기초/심화, Docker, MySQL","color":"4"},
+		{"id":"w04","type":"text","x":820,"y":60,"width":200,"height":100,"text":"# Week 04\n**네트워크/클라우드**\nHTTP, 클라우드, 웹서버, 배포 자동화","color":"4"},
+		{"id":"w05","type":"text","x":1160,"y":60,"width":200,"height":100,"text":"# Week 05\n**Prompt/RAG**\n프롬프팅, RAG, Advanced RAG, LLM 보안","color":"5"},
+		{"id":"w06","type":"text","x":1380,"y":60,"width":200,"height":100,"text":"# Week 06\n**Agentic Workflow**\nTool Calling, MCP, Memory, Evaluation","color":"5"},
+		{"id":"w07","type":"text","x":1720,"y":60,"width":180,"height":100,"text":"# Week 07\n**프로젝트 기획**\nAI 서비스 기획, Workflow Design","color":"6"},
+		{"id":"w08","type":"text","x":1920,"y":60,"width":180,"height":100,"text":"# Week 08\n**Agent 아키텍처**\nLangGraph, Streaming, CI/CD","color":"6"},
+		{"id":"w09","type":"text","x":2120,"y":60,"width":180,"height":100,"text":"# Week 09\n**LLMOps**\nAPI, 상태관리, Observability","color":"6"}
+	],
+	"edges":[
+		{"id":"e01-02","fromNode":"w01","toNode":"w02","fromSide":"right","toSide":"left"},
+		{"id":"e02-03","fromNode":"w02","toNode":"w03","fromSide":"right","toSide":"left"},
+		{"id":"e03-04","fromNode":"w03","toNode":"w04","fromSide":"right","toSide":"left"},
+		{"id":"e04-05","fromNode":"w04","toNode":"w05","fromSide":"right","toSide":"left"},
+		{"id":"e05-06","fromNode":"w05","toNode":"w06","fromSide":"right","toSide":"left"},
+		{"id":"e06-07","fromNode":"w06","toNode":"w07","fromSide":"right","toSide":"left"},
+		{"id":"e07-08","fromNode":"w07","toNode":"w08","fromSide":"right","toSide":"left"},
+		{"id":"e08-09","fromNode":"w08","toNode":"w09","fromSide":"right","toSide":"left"}
+	]
+}

@@ -1,0 +1,68 @@
+---
+type: lecture
+week: 4
+day: 1
+title: "HTTP와 웹 통신 이해"
+topic: "http"
+tags:
+  - topic/http
+status: complete
+---
+
+# HTTP와 웹 통신 이해
+
+## 핵심 개념
+
+> [!summary] 요약
+> 네트워크는 두 대 이상의 장치가 연결되어 정보를 주고받는 통신망이다. 웹에서 데이터를 주고받기 위해 HTTP 프로토콜을 사용하며, 클라이언트-서버 구조에서 요청(Request)과 응답(Response)을 통해 통신한다. REST API를 활용한 서버 구현 기초로 FastAPI를 다룬다.
+
+## 주요 내용
+
+### 1. 네트워크를 알아야 하는 이유
+- 네트워크: 두 대 이상의 장치가 연결되어 정보를 주고받는 **통신망**
+- 계층적으로 연결되어 있음 (노드, 간선/링크)
+- 외부 컴퓨터 파워를 사용하기 위해 (예: GPT)
+- 외부 데이터/알고리즘/기능을 사용하기 위해
+- 관련: [[클라이언트-서버 모델]]
+
+### 2. 네트워크의 장단점
+- **장점**: 외부 컴퓨터 파워 사용, 외부 데이터/알고리즘 활용
+- **단점**: 보안 위험성(DDoS 등), 불안정성(지연, 패킷 손실), 복잡성, 비용
+- 온디바이스 AI와의 비교: 네트워크 지연 없음, 개인정보 보호 vs 속도/품질 저하
+- 관련: [[네트워크 보안]]
+
+### 3. 네트워크 요청-응답 과정
+- **클라이언트-서버** 구조
+- **HTTP 프로토콜**을 통해 데이터 요청
+- GET/POST/PUT/DELETE 와 URL, 상태코드, Header, Body
+- 데이터는 패킷 단위로 나뉘어 계층적으로 전달
+- 관련: [[HTTP 프로토콜]]
+
+### 4. REST 요청 방법과 실제 보내기
+- **URL과 PORT** 개념
+- 브라우저, Postman(curl 명령어), 코드로 요청 가능
+- **RESTful API** 설계 원칙
+- 관련: [[REST API]]
+
+### 5. REST 응답 서버 구현
+- **FastAPI**를 사용한 서버 구현
+- 라우팅, 요청/응답 처리 기초
+- 관련: [[FastAPI]]
+
+## 흐름도
+
+```mermaid
+sequenceDiagram
+    participant Client as 클라이언트
+    participant Server as 서버
+    Client->>Server: HTTP 요청 (GET/POST/PUT/DELETE)
+    Note right of Server: URL + Header + Body 파싱
+    Server-->>Client: HTTP 응답 (상태코드 + Body)
+```
+
+## 연결된 개념
+- [[HTTP 프로토콜]]
+- [[REST API]]
+- [[클라이언트-서버 모델]]
+- [[FastAPI]]
+- [[네트워크 보안]]

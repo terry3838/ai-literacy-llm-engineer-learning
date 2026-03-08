@@ -1,0 +1,25 @@
+---
+name: Week08 대시보드
+filter:
+  operator: and
+  conditions:
+    - field: type
+      operator: is
+      value: lecture
+    - field: week
+      operator: is
+      value: 8
+formulaEnabled: true
+views:
+  - name: 강의 목록
+    type: table
+    order:
+      - field: day
+        direction: asc
+    fields:
+      - title
+      - day
+      - topic
+      - status
+      - sources
+---

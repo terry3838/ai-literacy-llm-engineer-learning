@@ -1,0 +1,21 @@
+# Claude Code / OMC 상태 파일
+.omc/
+**/.omc/
+
+# Obsidian 개인 설정 (workspace 상태)
+.obsidian/workspace.json
+.obsidian/graph.json
+
+# 환경 변수 / 인증
+.env
+.env.*
+*.pem
+API키값.txt
+
+# 학습 진도 (개인별 다르므로 공유하지 않음)
+.claude/learning-progress.json
+
+# 기타
+__pycache__/
+.venv/
+node_modules/
