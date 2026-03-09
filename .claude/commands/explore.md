@@ -19,8 +19,8 @@
 
 ### 인프라 & 도구
 - FastAPI, Docker, Git, Supabase
-- CI-CD, 클라우드-컴퓨팅, HTTP
-- LiteLLM, Gradio, Observability
+- CI-CD, 클라우드-컴퓨팅, HTTP, Gradio
+- LiteLLM, Observability
 
 ### 자료구조 & 알고리즘
 - 스택, 큐, 해시, 트리, 그래프, 힙

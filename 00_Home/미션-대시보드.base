@@ -1,23 +1,47 @@
-{
-  "headerConfig": {
-    "showAdd": true,
-    "showFilter": true,
-    "showSearch": true
-  },
-  "query": {
-    "folder": "04_Exercises",
-    "filterGroups": []
-  },
-  "order": [
-    {"field": "week", "direction": "asc"},
-    {"field": "day", "direction": "asc"}
-  ],
-  "fieldConfig": {
-    "file.name": {"visible": true, "width": 250, "displayName": "실습"},
-    "week": {"visible": true, "width": 80, "displayName": "주차"},
-    "day": {"visible": true, "width": 80, "displayName": "일차"},
-    "title": {"visible": true, "width": 200, "displayName": "제목"},
-    "status": {"visible": true, "width": 100, "displayName": "상태"}
-  },
-  "viewType": "table"
-}
+filters:
+  and:
+    - file.inFolder("04_Exercises")
+
+formulas:
+  완료여부: 'if(status == "완료", "✅", "⏳")'
+
+properties:
+  file.name:
+    displayName: 실습
+  week:
+    displayName: 주차
+  day:
+    displayName: 일차
+  title:
+    displayName: 제목
+  status:
+    displayName: 상태
+  formula.완료여부:
+    displayName: ""
+
+views:
+  - type: table
+    name: "전체 실습"
+    order:
+      - formula.완료여부
+      - week
+      - day
+      - file.name
+      - title
+      - status
+    groupBy:
+      property: week
+      direction: ASC
+    summaries:
+      formula.완료여부: Filled
+
+  - type: table
+    name: "미완료 실습"
+    filters:
+      not:
+        - 'status == "완료"'
+    order:
+      - week
+      - day
+      - file.name
+      - status

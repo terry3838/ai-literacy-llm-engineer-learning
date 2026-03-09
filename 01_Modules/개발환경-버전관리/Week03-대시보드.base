@@ -1,12 +1,22 @@
-{
-  "headerConfig": {"showAdd": true, "showFilter": true, "showSearch": true},
-  "query": {"folder": "01_Modules/개발환경-버전관리", "filterGroups": []},
-  "order": [{"field": "day", "direction": "asc"}],
-  "fieldConfig": {
-    "file.name": {"visible": true, "width": 250, "displayName": "강의"},
-    "day": {"visible": true, "width": 80, "displayName": "일차"},
-    "title": {"visible": true, "width": 200, "displayName": "제목"},
-    "status": {"visible": true, "width": 100, "displayName": "상태"}
-  },
-  "viewType": "table"
-}
+filters:
+  and:
+    - file.inFolder("01_Modules/개발환경-버전관리")
+
+properties:
+  file.name:
+    displayName: 강의
+  day:
+    displayName: 일차
+  title:
+    displayName: 제목
+  status:
+    displayName: 상태
+
+views:
+  - type: table
+    name: "Week03 - 개발환경/Git/Docker"
+    order:
+      - day
+      - file.name
+      - title
+      - status

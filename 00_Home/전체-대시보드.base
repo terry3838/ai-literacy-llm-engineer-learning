@@ -1,35 +1,55 @@
-{
-  "headerConfig": {
-    "showAdd": true,
-    "showFilter": true,
-    "showSearch": true
-  },
-  "query": {
-    "folder": "",
-    "filterGroups": [
-      {
-        "id": "fg1",
-        "filters": [
-          {
-            "id": "f1",
-            "field": "type",
-            "operator": "is",
-            "value": ""
-          }
-        ]
-      }
-    ]
-  },
-  "order": [
-    {"field": "file.name", "direction": "asc"}
-  ],
-  "fieldConfig": {
-    "file.name": {"visible": true, "width": 250, "displayName": "노트"},
-    "type": {"visible": true, "width": 100, "displayName": "유형"},
-    "week": {"visible": true, "width": 80, "displayName": "주차"},
-    "topic": {"visible": true, "width": 150, "displayName": "주제"},
-    "status": {"visible": true, "width": 100, "displayName": "상태"},
-    "tags": {"visible": true, "width": 200, "displayName": "태그"}
-  },
-  "viewType": "table"
-}
+formulas:
+  phase: 'if(week <= 2, "Phase 1: 기초", if(week <= 4, "Phase 2: 개발환경", if(week <= 6, "Phase 3: AI Engineering", "Phase 4: 실전")))'
+
+properties:
+  file.name:
+    displayName: 노트
+  type:
+    displayName: 유형
+  week:
+    displayName: 주차
+  topic:
+    displayName: 주제
+  status:
+    displayName: 상태
+  formula.phase:
+    displayName: Phase
+
+views:
+  - type: table
+    name: "강의 노트"
+    filters:
+      and:
+        - 'type == "lecture"'
+    order:
+      - formula.phase
+      - week
+      - file.name
+      - topic
+      - status
+    groupBy:
+      property: week
+      direction: ASC
+
+  - type: table
+    name: "개념 허브"
+    filters:
+      and:
+        - 'type == "concept"'
+    order:
+      - file.name
+      - status
+
+  - type: table
+    name: "실습 노트"
+    filters:
+      and:
+        - 'type == "exercise"'
+    order:
+      - week
+      - day
+      - file.name
+      - status
+    groupBy:
+      property: week
+      direction: ASC

@@ -1,25 +1,25 @@
----
-name: Week08 대시보드
-filter:
-  operator: and
-  conditions:
-    - field: type
-      operator: is
-      value: lecture
-    - field: week
-      operator: is
-      value: 8
-formulaEnabled: true
+filters:
+  and:
+    - file.inFolder("01_Modules/Agent-아키텍처")
+
+properties:
+  file.name:
+    displayName: 강의
+  day:
+    displayName: 일차
+  title:
+    displayName: 제목
+  topic:
+    displayName: 주제
+  status:
+    displayName: 상태
+
 views:
-  - name: 강의 목록
-    type: table
+  - type: table
+    name: "Week08 - Agent 아키텍처"
     order:
-      - field: day
-        direction: asc
-    fields:
-      - title
       - day
+      - file.name
+      - title
       - topic
       - status
-      - sources
----

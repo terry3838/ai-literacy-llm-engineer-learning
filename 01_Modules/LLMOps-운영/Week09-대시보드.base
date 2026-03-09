@@ -1,25 +1,25 @@
----
-name: Week09 대시보드
-filter:
-  operator: and
-  conditions:
-    - field: type
-      operator: is
-      value: lecture
-    - field: week
-      operator: is
-      value: 9
-formulaEnabled: true
+filters:
+  and:
+    - file.inFolder("01_Modules/LLMOps-운영")
+
+properties:
+  file.name:
+    displayName: 강의
+  day:
+    displayName: 일차
+  title:
+    displayName: 제목
+  topic:
+    displayName: 주제
+  status:
+    displayName: 상태
+
 views:
-  - name: 강의 목록
-    type: table
+  - type: table
+    name: "Week09 - LLMOps/배포"
     order:
-      - field: day
-        direction: asc
-    fields:
-      - title
       - day
+      - file.name
+      - title
       - topic
       - status
-      - sources
----

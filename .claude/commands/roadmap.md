@@ -27,7 +27,11 @@ Phase 2: 개발환경 (Week 03~04)
     Day03: GitHub 협업
     Day04: Docker, MySQL
   Week 04 - 네트워크와 클라우드
-    (주차 인덱스 참조)
+    Day01: HTTP, 웹통신
+    Day02: 클라우드 컴퓨팅
+    Day03: 웹서버, 서비스
+    Day04: 배포, 자동화
+    Day05: 네트워크와 AI
 
 Phase 3: AI Engineering (Week 05~06)
   Week 05 - Prompt Engineering & RAG
