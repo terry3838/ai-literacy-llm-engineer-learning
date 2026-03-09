@@ -21,7 +21,7 @@ importance: medium
 
 Docker의 핵심 개념은 **이미지(Image)**와 **컨테이너(Container)**다. 이미지는 실행 환경과 코드를 포함한 불변 패키지이고, 컨테이너는 이미지를 실행한 인스턴스다. Dockerfile에 빌드 명령을 정의하면 레이어 캐싱으로 효율적으로 이미지를 생성한다.
 
-**docker-compose**는 여러 컨테이너를 정의하고 함께 실행하는 도구다. FastAPI 앱, 데이터베이스, 캐시 서버 등을 하나의 `docker-compose.yml`로 관리한다. lumi-agent 프로젝트에서 FastAPI + DB를 함께 컨테이너화하여 배포한다.
+**docker-compose**는 여러 컨테이너를 정의하고 함께 실행하는 도구다. FastAPI 앱, 데이터베이스, 캐시 서버 등을 하나의 `docker-compose.yml`로 관리한다. idol-agent 프로젝트에서 FastAPI + DB를 함께 컨테이너화하여 배포한다.
 
 ## 관련 강의
 

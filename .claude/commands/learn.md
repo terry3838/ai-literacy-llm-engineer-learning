@@ -11,12 +11,12 @@
 ## 학습 진행
 
 ### 주차 시작
-1. 해당 주차의 인덱스 파일을 읽음 (예: `01_Weekly/Week05-Prompt-Engineering-RAG/Week05-Prompt-Engineering-RAG.md`)
+1. 해당 주차의 인덱스 파일을 읽음 (예: `01_Modules/Prompt-Engineering-RAG/Week05-Prompt-Engineering-RAG.md`)
 2. 주차 개요와 일별 주제 목록을 보여줌
 3. "Day 1부터 시작할까요?" 질문
 
 ### 일별 학습
-1. 해당 일자 파일을 읽음 (예: `01_Weekly/Week05-Prompt-Engineering-RAG/W05D01-프롬프팅-기초.md`)
+1. 해당 일자 파일을 읽음 (예: `01_Modules/Prompt-Engineering-RAG/W05D01-프롬프팅-기초.md`)
 2. `> [!summary]` callout의 요약을 먼저 제시
 3. 주요 내용을 섹션별로 설명 (mermaid 다이어그램 포함)
 4. 핵심 포인트 3가지를 정리
@@ -30,7 +30,7 @@
 | 퀴즈, quiz | 현재 내용 기반 퀴즈 3문제 |
 | 요약, summary | 현재까지 학습 내용 요약 |
 | 개념, concept | 현재 노트의 wikilink 개념 탐색 |
-| 미션, mission | 현재 주차 관련 미션 확인 |
+| 실습, exercise | 현재 주차 관련 실습 확인 |
 | 종료, exit, quit | 진도 저장 후 종료 |
 
 ## 진도 저장
@@ -46,8 +46,8 @@
 
 ## 챕터 완료 시
 
-1. `04_Missions/` 폴더에서 현재 주차/일자 관련 미션 확인
-2. 미션이 있으면: "관련 미션이 있습니다: [미션명]. 도전해보시겠습니까?"
+1. `04_Exercises/` 폴더에서 현재 주차/일자 관련 실습 확인
+2. 실습이 있으면: "관련 실습이 있습니다: [실습명]. 도전해보시겠습니까?"
 3. `exercises/` 폴더에서 관련 실습 확인
 4. 없으면 다음 Day로 자동 진행 제안
 

@@ -23,7 +23,7 @@ FastAPI는 **async/await** 기반의 비동기 처리로 높은 동시성을 달
 
 **Pydantic 모델**은 FastAPI의 핵심 데이터 검증 레이어다. 요청 바디, 쿼리 파라미터, 응답 모델을 Pydantic BaseModel로 정의하면 자동 검증과 직렬화가 이루어진다. 의존성 주입(Dependency Injection) 시스템으로 인증, DB 연결 등 공통 로직을 재사용할 수 있다.
 
-미들웨어(Middleware)와 라우터(Router) 분리로 대규모 애플리케이션을 모듈화할 수 있다. CORS 설정, 예외 핸들러, 백그라운드 태스크도 지원한다. lumi-agent 프로젝트에서 LangGraph 에이전트를 HTTP API로 노출하는 서빙 레이어로 사용된다.
+미들웨어(Middleware)와 라우터(Router) 분리로 대규모 애플리케이션을 모듈화할 수 있다. CORS 설정, 예외 핸들러, 백그라운드 태스크도 지원한다. idol-agent 프로젝트에서 LangGraph 에이전트를 HTTP API로 노출하는 서빙 레이어로 사용된다.
 
 ## 관련 강의
 

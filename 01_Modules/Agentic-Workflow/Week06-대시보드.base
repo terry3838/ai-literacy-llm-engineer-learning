@@ -1,0 +1,13 @@
+{
+  "headerConfig": {"showAdd": true, "showFilter": true, "showSearch": true},
+  "query": {"folder": "01_Modules/Agentic-Workflow", "filterGroups": []},
+  "order": [{"field": "day", "direction": "asc"}],
+  "fieldConfig": {
+    "file.name": {"visible": true, "width": 250, "displayName": "강의"},
+    "day": {"visible": true, "width": 80, "displayName": "일차"},
+    "title": {"visible": true, "width": 200, "displayName": "제목"},
+    "topic": {"visible": true, "width": 150, "displayName": "주제"},
+    "status": {"visible": true, "width": 100, "displayName": "상태"}
+  },
+  "viewType": "table"
+}

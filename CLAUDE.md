@@ -7,7 +7,7 @@
 - `/learn` - 주차별 순서대로 학습 시작
 - `/review` - 복습 퀴즈 모드
 - `/explore` - 개념 허브 탐색
-- `/mission` - 미션 도전
+- `/mission` - 실습 도전
 - `/roadmap` - 커리큘럼 전체 보기
 - `/ask` - 학습 내용 질문
 - `/progress` - 학습 진도 확인
@@ -18,19 +18,19 @@
 
 ```
 00_Home/          # 로드맵, 전체 대시보드, 커리큘럼 캔버스
-01_Weekly/        # 주차별 강의 노트 (Week01~09 -> DayXX 파일)
-  Week01-AI-Literacy/            W01D03~D05
-  Week02-자료구조-알고리즘/       W02D01~D05
-  Week03-개발환경-Git-Docker/    W03D01~D04
-  Week04-네트워크-클라우드/       (주차 인덱스)
-  Week05-Prompt-Engineering-RAG/ W05D01~D05
-  Week06-Agentic-Workflow/       W06D01~D05
-  Week07-프로젝트/                W07 프로젝트 노트
-  Week08-Agent-아키텍처/          W08D01~D05
-  Week09-LLMOps/                 W09D01~D03
+01_Modules/       # 주차별 강의 노트 (Week01~09 -> DayXX 파일)
+  AI-기초/                       W01D03~D05
+  자료구조-알고리즘/              W02D01~D05
+  개발환경-버전관리/              W03D01~D04
+  네트워크-클라우드/              (주차 인덱스)
+  Prompt-Engineering-RAG/        W05D01~D05
+  Agentic-Workflow/              W06D01~D05
+  서비스-기획/                   W07 프로젝트 노트
+  Agent-아키텍처/                W08D01~D05
+  LLMOps-운영/                   W09D01~D03
 02_Concepts/      # 단일 개념 허브 노트 (35개)
-03_Projects/      # 프로젝트 요약 (lumi-agent, 버디핏 등)
-04_Missions/      # 주차별 미션 노트 (27개)
+03_Projects/      # 프로젝트 요약 (idol-agent, fitness-buddy 등)
+04_Exercises/     # 주차별 실습 노트 (27개)
 05_Resources/     # 논문/외부 참고자료 요약
 exercises/        # 자기주도 실습 과제
 ```
@@ -51,7 +51,7 @@ exercises/        # 자기주도 실습 과제
 | type | 필수 필드 |
 |------|----------|
 | `lecture` | `week`, `day`, `title`, `topic`, `tags`, `status` |
-| `mission` | `week`, `day`, `title`, `tags`, `status` |
+| `exercise` | `week`, `day`, `title`, `tags`, `status` |
 | `concept` | `title`, `category`, `tags`, `related`, `first_seen`, `importance` |
 | `project` | `title`, `week`, `tech_stack`, `tags`, `status` |
 | `reference` | `title`, `tags` |
@@ -70,9 +70,9 @@ Graph View에서 중심 허브 역할을 하는 핵심 개념 노트:
 
 ## Navigation Rules
 
-1. **주차 노트**: `01_Weekly/WeekXX-*/` 폴더, 일별 파일 `WxxDxx-*.md`
+1. **주차 노트**: `01_Modules/*/` 폴더, 일별 파일 `WxxDxx-*.md`
 2. **개념 허브**: `02_Concepts/`의 단일 주제 참조 노트, 주차 노트에서 wikilink로 연결
-3. **미션**: `04_Missions/`의 실습 과제, `WeekXX-DayXX-*-미션.md` 패턴
+3. **실습**: `04_Exercises/`의 실습 과제, `*-실습.md` 패턴
 4. **Wikilink**: `[[LangGraph]]` 같은 링크는 관련 노트를 찾아 연결
 5. **Callout**: `> [!summary]`, `> [!info]`, `> [!task]` 등에 핵심 정보 포함
 
@@ -102,6 +102,6 @@ Graph View에서 중심 허브 역할을 하는 핵심 개념 노트:
 
 | 노트 | 실제 코드 위치 |
 |------|--------------|
-| `lumi-agent-v02` | `../../../Week08/Day02/day2-mission/` |
-| `lumi-agent-v06` | `../../../Week09/Day01/day6-mission/` |
-| `lumi-agent-v07` | `../../../Week09/Day02/Day7_mission/` |
+| `idol-agent-v02` | `../../../Week08/Day02/day2-mission/` |
+| `idol-agent-v06` | `../../../Week09/Day01/day6-mission/` |
+| `idol-agent-v07` | `../../../Week09/Day02/Day7_mission/` |
