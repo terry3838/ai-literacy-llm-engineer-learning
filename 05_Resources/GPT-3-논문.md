@@ -19,18 +19,7 @@ tags:
 
 ## 프롬프팅 모드 비교
 
-```mermaid
-flowchart TD
-    subgraph ZeroShot["Zero-Shot"]
-        Z1[태스크 설명] --> Z2[입력] --> Z3[출력]
-    end
-    subgraph OneShot["One-Shot"]
-        O1[태스크 설명] --> O2[예시 1개] --> O3[입력] --> O4[출력]
-    end
-    subgraph FewShot["Few-Shot"]
-        F1[태스크 설명] --> F2[예시 K개] --> F3[입력] --> F4[출력]
-    end
-```
+![Diagram 1](../assets/diagrams/05_Resources__GPT-3-논문__diagram_1.svg)
 
 ## 주요 발견
 - 모델 크기에 따른 성능 향상이 Few-shot에서 가장 두드러짐

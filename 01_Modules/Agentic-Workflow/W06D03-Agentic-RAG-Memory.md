@@ -49,20 +49,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph TB
-    A[사용자 질문] --> B{에이전트 판단}
-    B -->|검색 필요| C[쿼리 작성/변환]
-    B -->|직접 답변| G[응답 생성]
-    C --> D[다중 소스 검색]
-    D --> E{결과 품질 평가}
-    E -->|불충분| C
-    E -->|충분| F[컨텍스트 구성]
-    F --> G
-    G --> H{반성/평가}
-    H -->|개선점 발견| I[(메모리에 저장)]
-    H --> J[최종 응답]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Agentic-Workflow__W06D03-Agentic-RAG-Memory__diagram_1.svg)
 
 ## 연결된 개념
 - [[Agentic RAG]]

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1149.969 152.75" width="1149.969" height="152.75" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="C" data-to="M" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="653.3870000000001,85.85 701.3870000000001,85.85" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="M" data-to="R" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="809.2860000000001,85.85 857.2860000000001,85.85" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="R" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="943.696,85.85 979.696,85.85 979.696,75.86666666666667 991.696,75.86666666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="991.696,57.93333333333333 979.696,57.93333333333333 979.696,47.949999999999996 689.3870000000001,47.949999999999996 689.3870000000001,60.75 158.273,60.75" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="H" data-to="P" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="158.273,73.05 194.273,73.05 194.273,85.85 206.273,85.85" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P" data-to="RES" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="331.956,85.85 379.956,85.85" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RES" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="489.337,85.85 537.337,85.85" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="C" data-label="클라이언트" data-shape="rectangle">
+  <rect x="537.337" y="67.39999999999999" width="116.05" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="595.362" y="85.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">클라이언트</text>
+</g>
+<g class="node" data-id="M" data-label="미들웨어
+CORS/Auth" data-shape="rectangle">
+  <rect x="701.3870000000001" y="58.949999999999996" width="107.899" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="755.3365000000001" y="85.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="755.3365000000001" dy="-3.9000000000000012">미들웨어</tspan><tspan x="755.3365000000001" dy="16.900000000000002">CORS/Auth</tspan></text>
+</g>
+<g class="node" data-id="R" data-label="라우터" data-shape="rectangle">
+  <rect x="857.2860000000001" y="67.39999999999999" width="86.41" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="900.4910000000001" y="85.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">라우터</text>
+</g>
+<g class="node" data-id="D" data-label="의존성 주입
+DB/Auth" data-shape="rectangle">
+  <rect x="991.696" y="40" width="118.273" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1050.8325" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1050.8325" dy="-3.9000000000000012">의존성 주입</tspan><tspan x="1050.8325" dy="16.900000000000002">DB/Auth</tspan></text>
+</g>
+<g class="node" data-id="H" data-label="핸들러 함수" data-shape="rectangle">
+  <rect x="40" y="48.449999999999996" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="99.1365" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">핸들러 함수</text>
+</g>
+<g class="node" data-id="P" data-label="Pydantic 검증" data-shape="rectangle">
+  <rect x="206.273" y="67.39999999999999" width="125.68299999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="269.1145" y="85.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Pydantic 검증</text>
+</g>
+<g class="node" data-id="RES" data-label="JSON 응답" data-shape="rectangle">
+  <rect x="379.956" y="67.39999999999999" width="109.381" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="434.6465" y="85.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">JSON 응답</text>
+</g>
+</svg>

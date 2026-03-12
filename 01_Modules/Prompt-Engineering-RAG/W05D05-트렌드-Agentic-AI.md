@@ -43,14 +43,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph LR
-    A[Prompt Engineering] --> B[Advanced Prompting]
-    B --> C[RAG]
-    C --> D[Advanced RAG]
-    D --> E[Agentic AI]
-    E --> F[Multi-Agent System]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Prompt-Engineering-RAG__W05D05-트렌드-Agentic-AI__diagram_1.svg)
 
 ## 연결된 개념
 - [[프롬프트 엔지니어링]]

@@ -38,13 +38,7 @@ status: complete
 | **Dockerfile** | 이미지를 빌드하기 위한 명령어 스크립트 |
 | **레지스트리 (Registry)** | 이미지 저장소 (Docker Hub 등) |
 
-```mermaid
-graph LR
-    A[Dockerfile] -->|docker build| B[Image]
-    B -->|docker run| C[Container]
-    B -->|docker push| D[Registry]
-    D -->|docker pull| B
-```
+![Diagram 1](../../assets/diagrams/01_Modules__개발환경-버전관리__W03D04-Docker-MySQL__diagram_1.svg)
 
 ### 3. Docker 기본 명령어
 
@@ -123,13 +117,7 @@ DELETE FROM users WHERE name = '홍길동';
 - 로컬에서 MySQL 클라이언트로 접속하여 SQL 실습
 - 앱 컨테이너에서 DB 컨테이너로 연결 (`depends_on`)
 
-```mermaid
-graph TB
-    subgraph "Docker Compose"
-        APP[App Container<br/>FastAPI] -->|port 8000| HOST[Host]
-        DB[MySQL Container<br/>port 3306] -->|내부 네트워크| APP
-    end
-```
+![Diagram 2](../../assets/diagrams/01_Modules__개발환경-버전관리__W03D04-Docker-MySQL__diagram_2.svg)
 
 ## 연결된 개념
 - [[Docker]] - 컨테이너 기반 가상화 플랫폼

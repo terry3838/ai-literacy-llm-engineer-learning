@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815.5985 286.70000000000005" width="815.5985" height="286.70000000000005" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="PE" data-to="ZS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="377.07166666666666,76.9 377.07166666666666,94.9 90.2445,94.9 90.2445,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PE" data-to="FS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="377.07166666666666,76.9 377.07166666666666,94.9 216.51050000000004,94.9 216.51050000000004,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PE" data-to="CoT" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="377.07166666666666,76.9 377.07166666666666,94.9 477.60124999999994,94.9 477.60124999999994,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PE" data-to="PC" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="377.07166666666666,76.9 377.07166666666666,94.9 706.829,94.9 706.829,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoT" data-to="SC" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="477.60124999999994,149.8 477.60124999999994,173.8 394.276,173.8 394.276,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoT" data-to="ToT" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="477.60124999999994,149.8 477.60124999999994,173.8 560.9265,173.8 560.9265,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PC" data-to="RAG_INT" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="706.829,149.8 706.829,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="FS" data-to="IC" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="216.51050000000004,149.8 216.5105,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="PE" data-label="Prompt Engineering" data-shape="rectangle">
+  <rect x="297.92816666666664" y="40" width="158.287" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="377.07166666666666" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Prompt Engineering</text>
+</g>
+<g class="node" data-id="ZS" data-label="Zero-shot" data-shape="rectangle">
+  <rect x="40" y="112.9" width="100.489" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="90.2445" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Zero-shot</text>
+</g>
+<g class="node" data-id="FS" data-label="Few-shot" data-shape="rectangle">
+  <rect x="168.48900000000003" y="112.9" width="96.043" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="216.51050000000004" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Few-shot</text>
+</g>
+<g class="node" data-id="CoT" data-label="Chain of Thought" data-shape="rectangle">
+  <rect x="407.72024999999996" y="112.9" width="139.762" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="477.60124999999994" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Chain of Thought</text>
+</g>
+<g class="node" data-id="PC" data-label="Prompt Chaining" data-shape="rectangle">
+  <rect x="638.0595" y="112.9" width="137.539" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="706.829" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Prompt Chaining</text>
+</g>
+<g class="node" data-id="SC" data-label="Self-Consistency" data-shape="rectangle">
+  <rect x="323.2835" y="197.8" width="141.985" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="394.276" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Self-Consistency</text>
+</g>
+<g class="node" data-id="ToT" data-label="Tree of Thought" data-shape="rectangle">
+  <rect x="493.2685" y="197.8" width="135.31599999999997" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="560.9265" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Tree of Thought</text>
+</g>
+<g class="node" data-id="RAG_INT" data-label="RAG 통합" data-shape="rectangle">
+  <rect x="656.5844999999999" y="197.8" width="100.48899999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="706.829" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">RAG 통합</text>
+</g>
+<g class="node" data-id="IC" data-label="In-Context Learning" data-shape="rectangle">
+  <rect x="137.7375" y="197.8" width="157.546" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="216.5105" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">In-Context Learning</text>
+</g>
+</svg>

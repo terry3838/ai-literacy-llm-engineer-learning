@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.317 436.5" width="504.317" height="436.5" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="_" data-label="자료구조 비교">
+  <rect x="40" y="40" width="424.317" height="356.5" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="40" width="424.317" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">자료구조 비교</text>
+</g>
+<polyline class="edge" data-from="S" data-to="O1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="제약 있음" points="190.2045,232.25 346.65500000000003,232.25 346.65500000000003,176.575 382.65500000000003,176.575" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Q" data-to="O1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="제약 있음" points="175.3845,167.35000000000002 382.65500000000003,167.35000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="H" data-to="O1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="제약 없음" points="205.0245,102.45 346.65500000000003,102.45000000000002 346.65500000000003,158.125 382.65500000000003,158.125" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="ON" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="접근O1, 삽입/삭제" points="158.3415,362.05 346.65500000000003,362.05 346.65500000000003,335.75 382.65500000000003,335.75" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L" data-to="ON" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="삽입O1, 탐색" points="219.84450000000004,297.15 346.65500000000003,297.15000000000003 346.65500000000003,323.45000000000005 382.65500000000003,323.45000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="S" data-to="O1" data-label="제약 있음">
+  <rect x="252.39800000000002" y="216.25" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="285.874" y="231.4" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">제약 있음</text>
+</g>
+<g class="edge-label" data-from="Q" data-to="O1" data-label="제약 있음">
+  <rect x="252.39800000000002" y="151.35" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="285.874" y="166.5" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">제약 있음</text>
+</g>
+<g class="edge-label" data-from="H" data-to="O1" data-label="제약 없음">
+  <rect x="252.39800000000002" y="86.45" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="285.874" y="101.60000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">제약 없음</text>
+</g>
+<g class="edge-label" data-from="A" data-to="ON" data-label="접근O1, 삽입/삭제">
+  <rect x="233.09300000000002" y="346.05" width="105.56200000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="285.874" y="361.2" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">접근O1, 삽입/삭제</text>
+</g>
+<g class="edge-label" data-from="L" data-to="ON" data-label="삽입O1, 탐색">
+  <rect x="246.45800000000003" y="281.15000000000003" width="78.83200000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="285.874" y="296.3" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">삽입O1, 탐색</text>
+</g>
+<g class="node" data-id="S" data-label="스택 LIFO" data-shape="rectangle">
+  <rect x="86.75150000000001" y="213.8" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="138.478" y="232.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">스택 LIFO</text>
+</g>
+<g class="node" data-id="O1" data-label="O(1)" data-shape="rectangle">
+  <rect x="382.65500000000003" y="148.9" width="61.216" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="413.26300000000003" y="167.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">O(1)</text>
+</g>
+<g class="node" data-id="Q" data-label="큐 FIFO" data-shape="rectangle">
+  <rect x="86.75150000000001" y="148.9" width="88.633" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="131.068" y="167.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">큐 FIFO</text>
+</g>
+<g class="node" data-id="H" data-label="해시 테이블" data-shape="rectangle">
+  <rect x="86.75150000000001" y="84" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="145.888" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">해시 테이블</text>
+</g>
+<g class="node" data-id="A" data-label="배열" data-shape="rectangle">
+  <rect x="86.75150000000001" y="343.6" width="71.59" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="122.54650000000001" y="362.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">배열</text>
+</g>
+<g class="node" data-id="ON" data-label="O(n)" data-shape="rectangle">
+  <rect x="382.65500000000003" y="311.15000000000003" width="65.662" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="415.48600000000005" y="329.6" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">O(n)</text>
+</g>
+<g class="node" data-id="L" data-label="링크드 리스트" data-shape="rectangle">
+  <rect x="86.75150000000001" y="278.7" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="153.298" y="297.15" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">링크드 리스트</text>
+</g>
+</svg>

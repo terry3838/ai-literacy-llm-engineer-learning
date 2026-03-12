@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 592.165 566" width="592.165" height="566" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="" data-label="단일에이전트">
+  <rect x="40" y="40" width="235.043" height="486" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="40" width="235.043" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">단일에이전트</text>
+</g>
+<g class="subgraph" data-id="" data-label="단일에이전트">
+  <rect x="303.043" y="40" width="249.12199999999999" height="181.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="303.043" y="40" width="249.12199999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="315.043" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">단일에이전트</text>
+</g>
+<polyline class="edge" data-from="A1" data-to="A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="108.28283333333334,80.9 108.28283333333334,128.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A2" data-to="A3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="125.4015,165.8 125.4015,177.8 139.53283333333334,177.8 139.53283333333334,293.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A3" data-to="A4" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="179.53283333333334,356.8 122.36616666666667,328.8 90.39316666666667,328.8 90.39316666666667,397.1 84.96866666666668,397.1 84.96866666666668,433.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A4" data-to="A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="50.48433333333334,433.1 50.48433333333334,177.8 91.16416666666669,177.8 91.16416666666669,165.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A3" data-to="A5" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="156.6995,333.9666666666667 156.6995,328.8 183.248,328.8 183.248,433.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S" data-to="W1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="429.08599999999996,120.9 429.08599999999996,144.9 489.996,144.9 489.996,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S" data-to="W2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="429.08599999999996,120.9 429.08599999999996,144.9 367.435,144.9 367.435,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W1" data-to="S" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="171.56333333333333,128.9 171.56333333333333,104.9 137.05519999999999,104.9 137.05519999999999,80.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W2" data-to="S" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="48.261333333333326,128.9 48.261333333333326,92.9 93.00639999999999,92.9 93.00639999999999,80.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="A3" data-to="A4" data-label="No">
+  <rect x="74.89316666666667" y="359.8" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="90.25216666666668" y="374.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="edge-label" data-from="A3" data-to="A5" data-label="Yes">
+  <rect x="164.748" y="359.8" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="183.077" y="374.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="node" data-id="A1" data-label="입력" data-shape="rectangle">
+  <rect x="112.48783333333336" y="84" width="71.59" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="148.28283333333337" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">입력</text>
+</g>
+<g class="node" data-id="A2" data-label="LLM 추론" data-shape="rectangle">
+  <rect x="96.92683333333335" y="168.9" width="102.71199999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="148.28283333333334" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LLM 추론</text>
+</g>
+<g class="node" data-id="A3" data-label="완료?" data-shape="diamond">
+  <polygon points="179.53283333333334,253.8 231.03283333333334,305.3 179.53283333333334,356.8 128.03283333333334,305.3" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="179.53283333333334" y="305.3" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">완료?</text>
+</g>
+<g class="node" data-id="A4" data-label="도구 실행" data-shape="rectangle">
+  <rect x="56" y="473.1" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="107.7265" y="491.55" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">도구 실행</text>
+</g>
+<g class="node" data-id="A5" data-label="출력" data-shape="rectangle">
+  <rect x="187.453" y="473.1" width="71.59" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="223.248" y="491.55" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">출력</text>
+</g>
+<g class="node" data-id="S" data-label="Supervisor" data-shape="rectangle">
+  <rect x="374.025" y="84" width="110.122" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="429.08599999999996" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Supervisor</text>
+</g>
+<g class="node" data-id="W1" data-label="Worker 1" data-shape="rectangle">
+  <rect x="443.827" y="168.9" width="92.338" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="489.996" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Worker 1</text>
+</g>
+<g class="node" data-id="W2" data-label="Worker 2" data-shape="rectangle">
+  <rect x="319.043" y="168.9" width="96.78399999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="367.435" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Worker 2</text>
+</g>
+</svg>

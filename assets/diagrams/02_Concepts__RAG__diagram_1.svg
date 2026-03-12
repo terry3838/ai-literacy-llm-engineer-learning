@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1138.854 141.625" width="1138.854" height="141.625" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Q" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="158.273,83.175 182.273,83.175 182.273,65.45 206.273,65.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="V" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="324.546,65.45 372.546,65.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="V" data-to="R" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="464.143,65.45 512.143,65.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="R" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="647.4590000000001,65.45 695.4590000000001,65.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="L" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="828.5520000000001,65.45 864.5520000000001,65.45 864.5520000000001,77.025 876.5520000000001,77.025" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Q" data-to="L" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="158.273,83.175 182.273,83.175 182.273,83.175 876.5520000000001,83.175" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L" data-to="A" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="947.4010000000001,83.17500000000001 995.4010000000001,83.17500000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="Q" data-label="사용자 질의" data-shape="rectangle">
+  <rect x="40" y="64.725" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="99.1365" y="83.175" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">사용자 질의</text>
+</g>
+<g class="node" data-id="E" data-label="임베딩 모델" data-shape="rectangle">
+  <rect x="206.273" y="47" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="265.4095" y="65.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">임베딩 모델</text>
+</g>
+<g class="node" data-id="V" data-label="벡터 DB" data-shape="cylinder">
+  <rect x="372.546" y="47" width="91.59700000000001" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="372.546" y1="47" x2="372.546" y2="83.9" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="464.14300000000003" y1="47" x2="464.14300000000003" y2="83.9" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="418.3445" cy="83.9" rx="45.798500000000004" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="418.3445" cy="47" rx="45.798500000000004" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="418.3445" y="65.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">벡터 DB</text>
+</g>
+<g class="node" data-id="R" data-label="관련 문서 검색" data-shape="rectangle">
+  <rect x="512.143" y="47" width="135.316" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="579.801" y="65.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">관련 문서 검색</text>
+</g>
+<g class="node" data-id="C" data-label="컨텍스트 구성" data-shape="rectangle">
+  <rect x="695.4590000000001" y="47" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="762.0055000000001" y="65.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">컨텍스트 구성</text>
+</g>
+<g class="node" data-id="L" data-label="LLM" data-shape="rectangle">
+  <rect x="876.5520000000001" y="64.725" width="70.84899999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="911.9765000000001" y="83.175" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LLM</text>
+</g>
+<g class="node" data-id="A" data-label="최종 답변" data-shape="rectangle">
+  <rect x="995.4010000000001" y="64.725" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1047.1275" y="83.175" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">최종 답변</text>
+</g>
+</svg>

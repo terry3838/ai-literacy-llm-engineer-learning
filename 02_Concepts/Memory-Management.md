@@ -29,16 +29,7 @@ importance: medium
 
 ## 메모리 유형 분류
 
-```mermaid
-graph TD
-    M[에이전트 메모리] --> ST[단기 메모리\n컨텍스트 윈도우]
-    M --> LT[장기 메모리\n벡터 DB]
-    M --> EP[에피소드 메모리\n경험 기록]
-    M --> SE[의미 메모리\n도메인 지식]
-    ST --> CB[Conversation Buffer]
-    ST --> SM[Summary Memory]
-    LT --> VM[Vector Memory]
-```
+![Diagram 1](../assets/diagrams/02_Concepts__Memory-Management__diagram_1.svg)
 
 ## 관련 개념
 

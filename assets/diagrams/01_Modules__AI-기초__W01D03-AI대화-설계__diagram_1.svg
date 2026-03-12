@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 992.76 346.70000000000005" width="992.76" height="346.70000000000005" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="__" data-label="컨텍스트 엔지니어링 시스템">
+  <rect x="40" y="40" width="912.76" height="266.70000000000005" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="40" width="912.76" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">컨텍스트 엔지니어링 시스템</text>
+</g>
+<polyline class="edge" data-from="SP" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="265.8555,120.9 265.8555,144.9 522.3149999999999,144.9 522.3149999999999,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="UP" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="441.7685,120.9 441.7685,144.9 522.3149999999999,144.9 522.3149999999999,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SM" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="602.8615,120.9 602.8615,144.9 522.3149999999999,144.9 522.3149999999999,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="LM" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="749.1345,120.9 749.1345,144.9 522.3149999999999,144.9 522.3149999999999,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RAG" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="886.5155000000001,120.9 886.5155000000001,144.9 522.3149999999999,144.9 522.3149999999999,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="T" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="109.9495,120.9 109.9495,144.9 522.3149999999999,144.9 522.3149999999999,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="LLM" data-to="SO" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="522.3149999999999,205.8 522.3149999999999,253.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="SP" data-label="시스템 프롬프트" data-shape="rectangle">
+  <rect x="191.899" y="84" width="147.913" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="265.8555" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">시스템 프롬프트</text>
+</g>
+<g class="node" data-id="LLM" data-label="LLM" data-shape="rectangle">
+  <rect x="486.8905" y="168.9" width="70.84899999999999" height="36.900000000000006" rx="0" ry="0" fill="#f9f" stroke="#333" stroke-width="2px" />
+  <text x="522.3149999999999" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LLM</text>
+</g>
+<g class="node" data-id="UP" data-label="사용자 프롬프트" data-shape="rectangle">
+  <rect x="367.812" y="84" width="147.913" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="441.7685" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">사용자 프롬프트</text>
+</g>
+<g class="node" data-id="SM" data-label="단기 메모리" data-shape="rectangle">
+  <rect x="543.725" y="84" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="602.8615" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">단기 메모리</text>
+</g>
+<g class="node" data-id="LM" data-label="장기 메모리" data-shape="rectangle">
+  <rect x="689.998" y="84" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="749.1345" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">장기 메모리</text>
+</g>
+<g class="node" data-id="RAG" data-label="RAG 검색" data-shape="rectangle">
+  <rect x="836.2710000000001" y="84" width="100.48899999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="886.5155000000001" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">RAG 검색</text>
+</g>
+<g class="node" data-id="T" data-label="도구 Tools" data-shape="rectangle">
+  <rect x="56" y="84" width="107.899" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="109.9495" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">도구 Tools</text>
+</g>
+<g class="node" data-id="SO" data-label="구조화된 출력" data-shape="rectangle">
+  <rect x="455.76849999999996" y="253.8" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="522.3149999999999" y="272.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">구조화된 출력</text>
+</g>
+</svg>

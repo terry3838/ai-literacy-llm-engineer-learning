@@ -26,17 +26,7 @@ status: complete
 
 ## 서비스 구조
 
-```mermaid
-flowchart TD
-    User[사용자] --> App[Fitness Buddy 앱]
-    App --> Agent[AI 운동 버디\nAgent]
-    Agent --> Recommend[운동 추천]
-    Agent --> Track[습관 추적]
-    Agent --> Motivate[동기 부여]
-
-    Agent --> LLM[LLM\n대화/분석]
-    Agent --> DB[(사용자 데이터)]
-```
+![Diagram 1](../assets/diagrams/03_Projects__fitness-buddy-기획__diagram_1.svg)
 
 ## 핵심 기능
 

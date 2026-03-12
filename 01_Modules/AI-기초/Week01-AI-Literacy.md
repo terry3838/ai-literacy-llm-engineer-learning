@@ -21,29 +21,7 @@ tags:
 
 ## 핵심 개념 맵
 
-```mermaid
-graph LR
-    A[AI Literacy] --> B[LLM 이해]
-    A --> C[프롬프트 엔지니어링]
-    A --> D[컨텍스트 엔지니어링]
-    A --> E[산업별 AI 적용]
-    A --> F[AI 윤리]
-
-    B --> B1[Transformer]
-    B --> B2[Self-Attention]
-    C --> C1[Zero/Few-shot]
-    C --> C2[CoT]
-    C --> C3[역할 할당]
-    D --> D1[RAG]
-    D --> D2[메모리]
-    D --> D3[도구 활용]
-    E --> E1[교육/의료]
-    E --> E2[제조/금융]
-    E --> E3[공공/국방]
-    F --> F1[공정성/편향]
-    F --> F2[EU AI Act]
-    F --> F3[Deepfake]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__AI-기초__Week01-AI-Literacy__diagram_1.svg)
 
 ## 연결된 개념
 - [[LLM]] - 대규모 언어 모델

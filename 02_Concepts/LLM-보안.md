@@ -31,21 +31,7 @@ importance: medium
 
 ## 공격 벡터와 방어 레이어
 
-```mermaid
-flowchart TD
-    A[공격 벡터] --> PI[Prompt Injection]
-    A --> JB[Jailbreaking]
-    A --> DL[데이터 유출]
-
-    D[방어 레이어] --> IV[입력 검증]
-    D --> OF[출력 필터링]
-    D --> GR[Guardrails]
-    D --> LJ[LLM-as-Judge]
-
-    PI --> IV
-    JB --> GR
-    DL --> OF
-```
+![Diagram 1](../assets/diagrams/02_Concepts__LLM-보안__diagram_1.svg)
 
 ## 관련 개념
 

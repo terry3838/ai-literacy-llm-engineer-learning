@@ -26,20 +26,7 @@ importance: low
 
 ## 탐색 순서 비교
 
-```mermaid
-graph TD
-    subgraph BFS순서
-        B1["1"] --> B2["2"]
-        B1 --> B3["3"]
-        B2 --> B4["4"]
-        B2 --> B5["5"]
-        B3 --> B6["6"]
-    end
-    subgraph 방문순서
-        O["BFS: 1→2→3→4→5→6"]
-        P["DFS: 1→2→4→5→3→6"]
-    end
-```
+![Diagram 1](../assets/diagrams/02_Concepts__BFS-DFS__diagram_1.svg)
 
 ## 관련 개념
 

@@ -51,14 +51,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-sequenceDiagram
-    participant Client as 클라이언트
-    participant Server as 서버
-    Client->>Server: HTTP 요청 (GET/POST/PUT/DELETE)
-    Note right of Server: URL + Header + Body 파싱
-    Server-->>Client: HTTP 응답 (상태코드 + Body)
-```
+![Diagram 1](../../assets/diagrams/01_Modules__네트워크-클라우드__W04D01-HTTP-웹통신__diagram_1.svg)
 
 ## 연결된 개념
 - [[HTTP 프로토콜]]

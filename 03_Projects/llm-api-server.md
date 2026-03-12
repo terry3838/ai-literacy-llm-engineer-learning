@@ -20,12 +20,7 @@ status: complete
 
 ## 아키텍처
 
-```mermaid
-flowchart TD
-    A[클라이언트] --> B[FastAPI Server]
-    B --> C[Solar API]
-    C --> D[Solar LLM]
-```
+![Diagram 1](../assets/diagrams/03_Projects__llm-api-server__diagram_1.svg)
 
 ## 프로젝트 구조
 

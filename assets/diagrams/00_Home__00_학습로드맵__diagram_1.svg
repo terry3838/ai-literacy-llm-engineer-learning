@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1753.5279999999998 193.8" width="1753.5279999999998" height="193.8" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Phase1" data-label="Phase 1: 기초">
+  <rect x="40" y="40" width="350.63199999999995" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="40" width="350.63199999999995" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Phase 1: 기초</text>
+</g>
+<g class="subgraph" data-id="Phase2" data-label="Phase 2: 개발환경">
+  <rect x="438.63199999999995" y="40" width="349.15" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="438.63199999999995" y="40" width="349.15" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="450.63199999999995" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Phase 2: 개발환경</text>
+</g>
+<g class="subgraph" data-id="Phase3" data-label="Phase 3: AI Engineering">
+  <rect x="835.7819999999999" y="40" width="336.553" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="835.7819999999999" y="40" width="336.553" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="847.7819999999999" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Phase 3: AI Engineering</text>
+</g>
+<g class="subgraph" data-id="Phase4" data-label="Phase 4: 실전">
+  <rect x="1220.335" y="40" width="493.193" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1220.335" y="40" width="493.193" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1232.335" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Phase 4: 실전</text>
+</g>
+<polyline class="edge" data-from="Phase1" data-to="Phase2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="390.63199999999995,96.9 438.63199999999995,96.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Phase2" data-to="Phase3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="787.7819999999999,96.9 835.7819999999999,96.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Phase3" data-to="Phase4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1172.335,96.9 1220.335,96.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W01" data-to="W02" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="162.41699999999997,110.9 210.41699999999997,110.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W03" data-to="W04" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="559.5669999999999,110.9 607.567,110.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W05" data-to="W06" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="965.6089999999999,110.9 1013.6089999999999,110.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W07" data-to="W08" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1369.428,110.9 1417.428,110.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="W08" data-to="W09" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1554.967,110.9 1602.967,110.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="W01" data-label="Week01
+AI Literacy" data-shape="rectangle">
+  <rect x="56" y="84" width="106.41699999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="109.20849999999999" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="109.20849999999999" dy="-3.9000000000000012">Week01</tspan><tspan x="109.20849999999999" dy="16.900000000000002">AI Literacy</tspan></text>
+</g>
+<g class="node" data-id="W02" data-label="Week02
+자료구조/알고리즘" data-shape="rectangle">
+  <rect x="210.41699999999997" y="84" width="164.21499999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="292.5245" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="292.5245" dy="-3.9000000000000012">Week02</tspan><tspan x="292.5245" dy="16.900000000000002">자료구조/알고리즘</tspan></text>
+</g>
+<g class="node" data-id="W03" data-label="Week03
+Git/Docker" data-shape="rectangle">
+  <rect x="454.63199999999995" y="84" width="104.93499999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="507.0994999999999" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="507.0994999999999" dy="-3.9000000000000012">Week03</tspan><tspan x="507.0994999999999" dy="16.900000000000002">Git/Docker</tspan></text>
+</g>
+<g class="node" data-id="W04" data-label="Week04
+네트워크/클라우드" data-shape="rectangle">
+  <rect x="607.567" y="84" width="164.21499999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="689.6745" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="689.6745" dy="-3.9000000000000012">Week04</tspan><tspan x="689.6745" dy="16.900000000000002">네트워크/클라우드</tspan></text>
+</g>
+<g class="node" data-id="W05" data-label="Week05
+Prompt/RAG" data-shape="rectangle">
+  <rect x="851.7819999999999" y="84" width="113.827" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="908.6954999999999" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="908.6954999999999" dy="-3.9000000000000012">Week05</tspan><tspan x="908.6954999999999" dy="16.900000000000002">Prompt/RAG</tspan></text>
+</g>
+<g class="node" data-id="W06" data-label="Week06
+Agentic Workflow" data-shape="rectangle">
+  <rect x="1013.6089999999999" y="84" width="142.726" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1084.972" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1084.972" dy="-3.9000000000000012">Week06</tspan><tspan x="1084.972" dy="16.900000000000002">Agentic Workflow</tspan></text>
+</g>
+<g class="node" data-id="W07" data-label="Week07
+프로젝트 기획" data-shape="rectangle">
+  <rect x="1236.335" y="84" width="133.09300000000002" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1302.8815" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1302.8815" dy="-3.9000000000000012">Week07</tspan><tspan x="1302.8815" dy="16.900000000000002">프로젝트 기획</tspan></text>
+</g>
+<g class="node" data-id="W08" data-label="Week08
+Agent 아키텍처" data-shape="rectangle">
+  <rect x="1417.428" y="84" width="137.539" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1486.1975000000002" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1486.1975000000002" dy="-3.9000000000000012">Week08</tspan><tspan x="1486.1975000000002" dy="16.900000000000002">Agent 아키텍처</tspan></text>
+</g>
+<g class="node" data-id="W09" data-label="Week09
+LLMOps" data-shape="rectangle">
+  <rect x="1602.967" y="84" width="94.561" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1650.2475000000002" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1650.2475000000002" dy="-3.9000000000000012">Week09</tspan><tspan x="1650.2475000000002" dy="16.900000000000002">LLMOps</tspan></text>
+</g>
+</svg>

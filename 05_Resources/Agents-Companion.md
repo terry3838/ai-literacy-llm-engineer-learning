@@ -27,15 +27,7 @@ tags:
 
 ### 실무 적용
 
-```mermaid
-flowchart TD
-    A[사용자 요청] --> B[Planning\n작업 계획]
-    B --> C[Execution\n실행]
-    C --> D{결과 검증}
-    D -->|성공| E[응답]
-    D -->|실패| F[Reflexion\n반성]
-    F --> B
-```
+![Diagram 1](../assets/diagrams/05_Resources__Agents-Companion__diagram_1.svg)
 
 ## 관련 개념
 - [[Agent-Architecture]] · [[Agentic-Workflow]]

@@ -55,25 +55,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph LR
-    subgraph Evaluation Pipeline
-        A[테스트 입력] --> B[에이전트 실행]
-        B --> C[응답 생성]
-        C --> D[LLM-as-Judge]
-        D --> E[점수/피드백]
-    end
-
-    subgraph AgentOps
-        F[에이전트 실행] --> G[Logging]
-        F --> H[Tracing]
-        F --> I[Monitoring]
-        G --> J[대시보드]
-        H --> J
-        I --> J
-        J --> K[Alerting]
-    end
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Agentic-Workflow__W06D05-Evaluation-AgentOps__diagram_1.svg)
 
 ## 연결된 개념
 - [[Agent-Evaluation]] - 에이전트 평가 방법론

@@ -42,18 +42,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph TB
-    A[Notebook Prototype] --> B[Script 변환]
-    B --> C[프로젝트 구조화]
-    C --> D[FastAPI 서버]
-    D --> E[LangGraph Agent]
-    E --> F[Supabase DB]
-    D --> G[Gradio UI]
-    C --> H[Docker 컨테이너]
-    H --> I[클라우드 배포]
-    I --> J[CI/CD 자동화]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Agent-아키텍처__W08D01-Agent-Architecture__diagram_1.svg)
 
 ## 연결된 개념
 - [[Agent-Architecture]] - 에이전트 아키텍처 패턴

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585.9207499999999 594.4000000000001" width="585.9207499999999" height="594.4000000000001" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Client" data-to="API" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="109.06499999999994,352.25000000000006 109.06499999999994,403.7000000000001 209.6537499999999,403.7000000000001 209.6537499999999,414.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="Graph" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="229.61291666666654,468.50000000000006 229.61291666666654,505.5000000000001 210.01999999999992,505.5000000000001 210.01999999999992,517.5000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Graph" data-to="Classify" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="160.22166666666664,517.5000000000001 160.22166666666664,505.5000000000001 40.039999999999964,505.5000000000001 40.039999999999964,105.80000000000007 348.35541666666654,105.80000000000007 348.35541666666654,93.80000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Classify" data-to="Generate" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="chat" points="393.4607499999999,93.80000000000001 393.4607499999999,299.90000000000003 409.02099999999996,299.90000000000003 409.02099999999996,315.3500000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Classify" data-to="RAG" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="rag" points="370.90808333333325,93.80000000000001 370.90808333333325,117.80000000000007 267.0226666666666,117.80000000000007 267.0226666666666,204.10000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Classify" data-to="Tool" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="tool" points="416.0134166666666,93.80000000000001 416.0134166666666,129.8 466.1907499999999,129.8 466.1907499999999,204.10000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RAG" data-to="Generate" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="267.0226666666666,257.90000000000003 267.0226666666666,286.62500000000006 409.0209999999999,286.62500000000006 409.0209999999999,315.3500000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Tool" data-to="Generate" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="466.1907499999999,257.9000000000001 466.1907499999999,299.90000000000003 450.6304999999999,299.90000000000003 450.6304999999999,315.3500000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Generate" data-to="API" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="409.0209999999999,369.1500000000001 409.0209999999999,391.92500000000007 229.61291666666654,391.92500000000007 229.61291666666654,414.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RAG" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="267.0226666666666,257.90000000000003 267.0226666666666,286.62500000000006 246.4459999999999,286.62500000000006 246.4459999999999,315.3500000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Classify" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="438.56608333333327,93.80000000000001 438.56608333333327,117.80000000000001 537.9207499999999,117.80000000000001 537.9207499999999,401.70000000000005 497.17324999999994,401.70000000000005 497.17324999999994,414.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Generate" data-to="LLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="409.0209999999999,369.1500000000001 409.0209999999999,391.92500000000007 479.5605833333333,391.92500000000007 479.5605833333333,414.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="Classify" data-to="Generate" data-label="chat">
+  <rect x="374.4607499999999" y="136.8" width="37.846000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="393.3837499999999" y="151.95000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">chat</text>
+</g>
+<g class="edge-label" data-from="Classify" data-to="RAG" data-label="rag">
+  <rect x="249.5226666666666" y="124.80000000000007" width="34.282" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="266.6636666666666" y="139.95000000000007" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">rag</text>
+</g>
+<g class="edge-label" data-from="Classify" data-to="Tool" data-label="tool">
+  <rect x="448.6907499999999" y="136.8" width="34.282" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="465.83174999999994" y="151.95000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">tool</text>
+</g>
+<g class="node" data-id="Client" data-label="클라이언트" data-shape="rectangle">
+  <rect x="51.039999999999964" y="315.3500000000001" width="116.05" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="109.06499999999997" y="333.80000000000007" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">클라이언트</text>
+</g>
+<g class="node" data-id="API" data-label="FastAPI
+chat endpoint" data-shape="rectangle">
+  <rect x="169.73541666666654" y="414.70000000000005" width="119.755" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="229.61291666666654" y="441.6" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="229.61291666666654" dy="-3.9000000000000012">FastAPI</tspan><tspan x="229.61291666666654" dy="16.900000000000002">chat endpoint</tspan></text>
+</g>
+<g class="node" data-id="Graph" data-label="LangGraph Graph" data-shape="rectangle">
+  <rect x="110.42333333333329" y="517.5000000000001" width="149.39499999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="185.12083333333328" y="535.9500000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LangGraph Graph</text>
+</g>
+<g class="node" data-id="Classify" data-label="intent_classifier
+의도 분류" data-shape="rectangle">
+  <rect x="325.8027499999999" y="40" width="135.31600000000003" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="393.4607499999999" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="393.4607499999999" dy="-3.9000000000000012">intent_classifier</tspan><tspan x="393.4607499999999" dy="16.900000000000002">의도 분류</tspan></text>
+</g>
+<g class="node" data-id="Generate" data-label="response_generator
+응답 생성" data-shape="rectangle">
+  <rect x="325.8019999999999" y="315.3500000000001" width="166.438" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="409.0209999999999" y="342.25000000000006" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="409.0209999999999" dy="-3.9000000000000012">response_generator</tspan><tspan x="409.0209999999999" dy="16.900000000000002">응답 생성</tspan></text>
+</g>
+<g class="node" data-id="RAG" data-label="rag_retriever
+RAG 검색" data-shape="rectangle">
+  <rect x="205.2926666666666" y="204.10000000000002" width="123.46" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="267.0226666666666" y="231.00000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="267.0226666666666" dy="-3.9000000000000012">rag_retriever</tspan><tspan x="267.0226666666666" dy="16.900000000000002">RAG 검색</tspan></text>
+</g>
+<g class="node" data-id="Tool" data-label="tool_executor
+도구 실행" data-shape="rectangle">
+  <rect x="404.4607499999999" y="204.10000000000002" width="123.46000000000001" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="466.1907499999999" y="231.00000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="466.1907499999999" dy="-3.9000000000000012">tool_executor</tspan><tspan x="466.1907499999999" dy="16.900000000000002">도구 실행</tspan></text>
+</g>
+<g class="node" data-id="DB" data-label="Supabase
+pgvector" data-shape="cylinder">
+  <rect x="195.08999999999992" y="322.3500000000001" width="102.71199999999999" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="195.08999999999992" y1="322.3500000000001" x2="195.08999999999992" y2="376.1500000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="297.8019999999999" y1="322.3500000000001" x2="297.8019999999999" y2="376.1500000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="246.4459999999999" cy="376.1500000000001" rx="51.355999999999995" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="246.4459999999999" cy="322.3500000000001" rx="51.355999999999995" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="246.4459999999999" y="349.2500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="246.4459999999999" dy="-3.9000000000000012">Supabase</tspan><tspan x="246.4459999999999" dy="16.900000000000002">pgvector</tspan></text>
+</g>
+<g class="node" data-id="LLM" data-label="Solar LLM
+LLM" data-shape="rectangle">
+  <rect x="426.72258333333326" y="414.70000000000005" width="105.676" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="479.5605833333333" y="441.6" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="479.5605833333333" dy="-3.9000000000000012">Solar LLM</tspan><tspan x="479.5605833333333" dy="16.900000000000002">LLM</tspan></text>
+</g>
+</svg>

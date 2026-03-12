@@ -25,14 +25,7 @@ LiteLLM은 OpenAI, Anthropic, Google, Solar 등 다양한 LLM 프로바이더의
 
 ## 구조/흐름
 
-```mermaid
-flowchart TD
-    App[애플리케이션] --> Router[LiteLLM Router]
-    Router -->|Primary| Solar[Solar Solar]
-    Router -->|Fallback| Gemini[Google Gemini]
-    Router -->|Retry| Router
-    Router --> Response[통합 응답]
-```
+![Diagram 1](../assets/diagrams/02_Concepts__LiteLLM__diagram_1.svg)
 
 ## 관련 개념
 - [[FastAPI]] - API 서버와의 통합

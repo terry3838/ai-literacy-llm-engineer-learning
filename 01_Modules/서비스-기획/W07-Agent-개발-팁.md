@@ -59,21 +59,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph TD
-    A[아이디어 발굴] --> B{Backward Discovery}
-    B --> C[Level 1: Prompt Engineering]
-    C --> D{해결 가능?}
-    D -->|Yes| E[배포 & 모니터링]
-    D -->|No| F[Level 2: Agent Pipeline]
-    F --> G{해결 가능?}
-    G -->|Yes| E
-    G -->|No| H[Level 3: Fine Tuning]
-    H --> I{해결 가능?}
-    I -->|Yes| E
-    I -->|No| J[Level 4: Post Training]
-    J --> E
-```
+![Diagram 1](../../assets/diagrams/01_Modules__서비스-기획__W07-Agent-개발-팁__diagram_1.svg)
 
 ## 연결된 개념
 

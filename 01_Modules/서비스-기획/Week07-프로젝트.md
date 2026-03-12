@@ -21,13 +21,7 @@ tags:
 
 ## 핵심 흐름
 
-```mermaid
-graph LR
-    A[도메인 선택 & 시장 분석] --> B[기획서 작성]
-    B --> C[AI Workflow 설계]
-    C --> D[Agent 개발 전략]
-    D --> E[프로젝트 실행]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__서비스-기획__Week07-프로젝트__diagram_1.svg)
 
 ## 연결된 개념
 

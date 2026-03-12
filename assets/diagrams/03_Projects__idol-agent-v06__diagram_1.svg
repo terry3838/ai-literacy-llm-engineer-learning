@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 532.387 868.1" width="532.387" height="868.1" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Docker" data-label="Docker Container">
+  <rect x="40" y="354.70000000000005" width="450.306" height="368.5" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="354.70000000000005" width="450.306" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="368.70000000000005" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Docker Container</text>
+</g>
+<g class="subgraph" data-id="CICD" data-label="CI/CD">
+  <rect x="283.9015833333333" y="40" width="159.165" height="266.70000000000005" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="283.9015833333333" y="40" width="159.165" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="295.9015833333333" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">CI/CD</text>
+</g>
+<polyline class="edge" data-from="Client" data-to="Docker" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="197.87658333333331,298.70000000000005 197.87658333333331,354.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Graph" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="401.0905,520.5 401.0905,544.5 441.031,544.5 441.031,777.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="Router" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="273.4525,435.6 273.4525,459.6 174.00874999999996,459.6 174.00874999999996,483.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Router" data-to="Solar" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="primary" points="196.56141666666664,520.5 196.56141666666664,532.5 240.291,532.5 240.291,670.3000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Router" data-to="Gemini" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="fallback" points="151.4560833333333,520.5 151.4560833333333,532.5 107.72649999999999,532.5 107.7265,670.3000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="Graph" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="273.4525,435.6 273.4525,459.6 401.0905,459.6 401.0905,483.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Graph" data-to="Tools" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="401.0905,520.5 401.0905,544.5 361.15,544.5 361.15,568.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GH" data-to="Build" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="363.4840833333333,120.9 363.4840833333333,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Build" data-to="Deploy" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="363.4840833333333,205.8 363.4840833333333,261.80000000000007" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="Router" data-to="Solar" data-label="primary">
+  <rect x="212.791" y="580.2500000000001" width="54.478" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="240.03" y="595.4000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">primary</text>
+</g>
+<g class="edge-label" data-from="Router" data-to="Gemini" data-label="fallback">
+  <rect x="80.22649999999999" y="580.2500000000001" width="54.477999999999994" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="107.46549999999999" y="595.4000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">fallback</text>
+</g>
+<g class="node" data-id="Client" data-label="클라이언트" data-shape="rectangle">
+  <rect x="139.8515833333333" y="261.80000000000007" width="116.05" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="197.87658333333331" y="280.25000000000006" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">클라이언트</text>
+</g>
+<g class="node" data-id="DB" data-label="Supabase" data-shape="cylinder">
+  <rect x="389.675" y="784.2" width="102.71199999999999" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="389.675" y1="784.2" x2="389.675" y2="821.1" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="492.387" y1="784.2" x2="492.387" y2="821.1" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="441.031" cy="821.1" rx="51.355999999999995" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="441.031" cy="784.2" rx="51.355999999999995" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="441.031" y="802.6500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Supabase</text>
+</g>
+<g class="node" data-id="API" data-label="FastAPI App" data-shape="rectangle">
+  <rect x="215.79799999999997" y="398.70000000000005" width="115.30900000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="273.4525" y="417.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">FastAPI App</text>
+</g>
+<g class="node" data-id="Router" data-label="LiteLLM Router" data-shape="rectangle">
+  <rect x="106.35074999999998" y="483.6" width="135.316" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="174.00874999999996" y="502.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LiteLLM Router</text>
+</g>
+<g class="node" data-id="Solar" data-label="Solar LLM" data-shape="rectangle">
+  <rect x="187.45299999999997" y="670.3000000000001" width="105.676" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="240.29099999999997" y="688.7500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Solar LLM</text>
+</g>
+<g class="node" data-id="Gemini" data-label="Gemini API" data-shape="rectangle">
+  <rect x="56" y="670.3000000000001" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="107.7265" y="688.7500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Gemini API</text>
+</g>
+<g class="node" data-id="Graph" data-label="LangGraph Agent" data-shape="rectangle">
+  <rect x="327.875" y="483.6" width="146.43099999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="401.0905" y="502.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LangGraph Agent</text>
+</g>
+<g class="node" data-id="Tools" data-label="Tool Executor
++ Error Handling" data-shape="rectangle">
+  <rect x="291.269" y="568.5" width="139.762" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="361.15" y="595.4" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="361.15" dy="-3.9000000000000012">Tool Executor</tspan><tspan x="361.15" dy="16.900000000000002">+ Error Handling</tspan></text>
+</g>
+<g class="node" data-id="GH" data-label="GitHub Actions" data-shape="rectangle">
+  <rect x="299.9015833333333" y="84" width="127.16499999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="363.4840833333333" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">GitHub Actions</text>
+</g>
+<g class="node" data-id="Build" data-label="Docker Build" data-shape="rectangle">
+  <rect x="304.3475833333333" y="168.9" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="363.48408333333333" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Docker Build</text>
+</g>
+<g class="node" data-id="Deploy" data-label="배포" data-shape="rectangle">
+  <rect x="327.6890833333333" y="261.80000000000007" width="71.59" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="363.48408333333333" y="280.25000000000006" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">배포</text>
+</g>
+</svg>

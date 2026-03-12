@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1626.9170000000001 274.70000000000005" width="1626.9170000000001" height="274.70000000000005" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="880.5674166666668,76.9 880.5674166666668,91.9 234.29450000000003,91.9 234.29450000000003,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="880.5674166666668,76.9 880.5674166666668,91.9 667.9264999999999,91.9 667.9264999999999,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="880.5674166666668,76.9 880.5674166666668,91.9 1038.7959999999998,91.9 1038.7959999999998,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="880.5674166666668,76.9 880.5674166666668,91.9 1400.7734999999998,91.9 1400.7734999999998,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="234.29450000000003,143.8 234.29450000000003,161.8 100.6185,161.8 100.6185,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="234.29450000000003,143.8 234.29450000000003,161.8 234.29450000000003,161.8 234.29450000000003,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="234.29450000000003,143.8 234.29450000000003,161.8 365.0065,161.8 365.0065,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="667.9264999999999,143.8 667.9264999999999,161.8 513.873,161.8 513.873,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="667.9264999999999,143.8 667.9264999999999,161.8 667.9265,161.8 667.9265,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="667.9264999999999,143.8 667.9264999999999,161.8 819.3865000000001,161.8 819.3865000000001,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1038.7959999999998,143.8 1038.7959999999998,161.8 965.6594999999999,161.8 965.6594999999999,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1038.7959999999998,143.8 1038.7959999999998,161.8 1111.9325,161.8 1111.9325,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="E1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1400.7734999999998,143.8 1400.7734999999998,161.8 1251.166,161.8 1251.166,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="E2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1400.7734999999998,143.8 1400.7734999999998,161.8 1400.7735,161.8 1400.7735,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="E3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1400.7734999999998,143.8 1400.7734999999998,161.8 1543.3415,161.8 1543.3415,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="A" data-label="개발환경 &amp; 협업" data-shape="rectangle">
+  <rect x="809.2044166666667" y="40" width="142.726" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="880.5674166666668" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">개발환경 &amp; 협업</text>
+</g>
+<g class="node" data-id="B" data-label="개발환경 구성" data-shape="rectangle">
+  <rect x="167.74800000000002" y="106.9" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="234.29450000000003" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">개발환경 구성</text>
+</g>
+<g class="node" data-id="C" data-label="Git 버전관리" data-shape="rectangle">
+  <rect x="608.79" y="106.9" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="667.9264999999999" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Git 버전관리</text>
+</g>
+<g class="node" data-id="D" data-label="GitHub 협업" data-shape="rectangle">
+  <rect x="982.6234999999999" y="106.9" width="112.345" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1038.7959999999998" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">GitHub 협업</text>
+</g>
+<g class="node" data-id="E" data-label="Docker 인프라" data-shape="rectangle">
+  <rect x="1334.2269999999999" y="106.9" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1400.7734999999998" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Docker 인프라</text>
+</g>
+<g class="node" data-id="B1" data-label="IDE/PyCharm" data-shape="rectangle">
+  <rect x="40" y="179.8" width="121.237" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="100.6185" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">IDE/PyCharm</text>
+</g>
+<g class="node" data-id="B2" data-label="uv/venv" data-shape="rectangle">
+  <rect x="189.23700000000002" y="179.8" width="90.11500000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="234.29450000000003" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">uv/venv</text>
+</g>
+<g class="node" data-id="B3" data-label="Python 환경" data-shape="rectangle">
+  <rect x="307.35200000000003" y="179.8" width="115.30899999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="365.0065" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Python 환경</text>
+</g>
+<g class="node" data-id="C1" data-label="init/add/commit" data-shape="rectangle">
+  <rect x="450.661" y="179.8" width="126.42399999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="513.873" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">init/add/commit</text>
+</g>
+<g class="node" data-id="C2" data-label="branch/merge" data-shape="rectangle">
+  <rect x="605.085" y="179.8" width="125.68299999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="667.9265" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">branch/merge</text>
+</g>
+<g class="node" data-id="C3" data-label="rebase/stash" data-shape="rectangle">
+  <rect x="758.768" y="179.8" width="121.237" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="819.3865000000001" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">rebase/stash</text>
+</g>
+<g class="node" data-id="D1" data-label="Pull Request" data-shape="rectangle">
+  <rect x="908.0049999999999" y="179.8" width="115.30900000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="965.6594999999999" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Pull Request</text>
+</g>
+<g class="node" data-id="D2" data-label="Issue/Project" data-shape="rectangle">
+  <rect x="1051.3139999999999" y="179.8" width="121.23700000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1111.9325" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Issue/Project</text>
+</g>
+<g class="node" data-id="E1" data-label="컨테이너" data-shape="rectangle">
+  <rect x="1200.551" y="179.8" width="101.22999999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1251.166" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">컨테이너</text>
+</g>
+<g class="node" data-id="E2" data-label="docker-compose" data-shape="rectangle">
+  <rect x="1329.781" y="179.8" width="141.985" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1400.7735" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">docker-compose</text>
+</g>
+<g class="node" data-id="E3" data-label="MySQL" data-shape="rectangle">
+  <rect x="1499.766" y="179.8" width="87.15100000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1543.3415" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">MySQL</text>
+</g>
+</svg>

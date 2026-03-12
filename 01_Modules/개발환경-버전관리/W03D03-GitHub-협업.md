@@ -37,15 +37,7 @@ status: complete
 
 **PR 워크플로우**
 
-```mermaid
-graph LR
-    A[브랜치 생성] --> B[코드 작성/커밋]
-    B --> C[Push to Remote]
-    C --> D[PR 생성]
-    D --> E[코드 리뷰]
-    E -->|승인| F[Merge]
-    E -->|수정 요청| B
-```
+![Diagram 1](../../assets/diagrams/01_Modules__개발환경-버전관리__W03D03-GitHub-협업__diagram_1.svg)
 
 **좋은 PR 작성법**
 - 제목: 변경 내용을 한 줄로 요약

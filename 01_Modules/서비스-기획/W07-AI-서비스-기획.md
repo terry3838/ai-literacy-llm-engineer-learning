@@ -59,16 +59,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph TD
-    A[1. 도메인 선택] --> B[2. 시장 분석]
-    B --> C[3. 5 Whys 근본 원인 분석]
-    C --> D[4. 페인 포인트 도출]
-    D --> E[5. 사례 분석]
-    E --> F[6. 차별화 전략]
-    F --> G[7. 서비스 상세 기획]
-    G --> H[기획서 완성]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__서비스-기획__W07-AI-서비스-기획__diagram_1.svg)
 
 ## 연결된 개념
 

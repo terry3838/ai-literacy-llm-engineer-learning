@@ -64,20 +64,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-flowchart TD
-    START([START]) --> classify_intent
-    classify_intent -->|general_chat, out_of_scope| END_NODE([END])
-    classify_intent -->|news_search, deep_analysis| extract_preferences
-    extract_preferences --> plan
-    plan --> research
-    research --> synthesize
-    synthesize --> evaluate_response
-    evaluate_response -->|score >= 7 OR iteration >= 2| save_memory
-    evaluate_response -->|score < 7 AND iteration < 2| improve_response
-    improve_response --> evaluate_response
-    save_memory --> END_NODE
-```
+![Diagram 1](../../assets/diagrams/01_Modules__서비스-기획__W07-Workflow-Design__diagram_1.svg)
 
 ## 연결된 개념
 

@@ -45,18 +45,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph LR
-    A[사용자 입력] --> B[Router Node]
-    B -->|RAG 필요| C[RAG Node]
-    B -->|일반 대화| D[Chat Node]
-    C --> E[Solar LLM]
-    D --> E
-    E --> F[응답 생성]
-
-    C -.-> G[(Supabase pgvector)]
-    B -.-> H[(Checkpointer)]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Agent-아키텍처__W08D02-LangGraph-MVP__diagram_1.svg)
 
 ## 연결된 개념
 - [[LangGraph]] - LangGraph 프레임워크

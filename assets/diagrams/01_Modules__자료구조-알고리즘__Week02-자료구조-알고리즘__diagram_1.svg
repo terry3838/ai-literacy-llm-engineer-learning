@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1337.897 286.70000000000005" width="1337.897" height="286.70000000000005" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="672.0020000000001,76.9 672.0020000000001,94.9 279.4955,94.9 279.4955,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="672.0020000000001,76.9 672.0020000000001,94.9 672.0020000000001,94.9 672.0020000000001,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="672.0020000000001,76.9 672.0020000000001,94.9 1078.631,94.9 1078.631,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="279.4955,149.8 279.4955,167.8 123.219,167.8 123.219,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="279.4955,149.8 279.4955,167.8 279.4955,167.8 279.4955,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="279.4955,149.8 279.4955,167.8 411.6895,167.8 411.6895,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="672.0020000000001,149.8 672.0020000000001,167.8 549.8115,167.8 549.8115,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="672.0020000000001,149.8 672.0020000000001,167.8 672.0020000000001,167.8 672.0020000000001,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="672.0020000000001,149.8 672.0020000000001,167.8 773.207,167.8 773.207,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1078.631,149.8 1078.631,167.8 898.124,167.8 898.124,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1078.631,149.8 1078.631,167.8 1028.836,167.8 1028.836,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1078.631,149.8 1078.631,167.8 1128.426,167.8 1128.426,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1078.631,149.8 1078.631,167.8 1245.059,167.8 1245.059,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="A" data-label="자료구조 &amp; 알고리즘" data-shape="rectangle">
+  <rect x="585.8190000000001" y="40" width="172.36599999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="672.0020000000001" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">자료구조 &amp; 알고리즘</text>
+</g>
+<g class="node" data-id="B" data-label="선형 자료구조" data-shape="rectangle">
+  <rect x="212.94899999999996" y="112.9" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="279.4955" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">선형 자료구조</text>
+</g>
+<g class="node" data-id="C" data-label="비선형 자료구조" data-shape="rectangle">
+  <rect x="598.0455000000001" y="112.9" width="147.913" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="672.0020000000001" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">비선형 자료구조</text>
+</g>
+<g class="node" data-id="D" data-label="알고리즘" data-shape="rectangle">
+  <rect x="1028.016" y="112.9" width="101.22999999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1078.631" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">알고리즘</text>
+</g>
+<g class="node" data-id="B1" data-label="배열/링크드 리스트" data-shape="rectangle">
+  <rect x="40" y="185.8" width="166.438" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="123.219" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">배열/링크드 리스트</text>
+</g>
+<g class="node" data-id="B2" data-label="스택/큐" data-shape="rectangle">
+  <rect x="234.438" y="185.8" width="90.11500000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="279.4955" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">스택/큐</text>
+</g>
+<g class="node" data-id="B3" data-label="해시 테이블" data-shape="rectangle">
+  <rect x="352.553" y="185.8" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="411.6895" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">해시 테이블</text>
+</g>
+<g class="node" data-id="C1" data-label="트리/BST" data-shape="rectangle">
+  <rect x="498.826" y="185.8" width="101.971" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="549.8115" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">트리/BST</text>
+</g>
+<g class="node" data-id="C2" data-label="그래프" data-shape="rectangle">
+  <rect x="628.797" y="185.8" width="86.41" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="672.0020000000001" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">그래프</text>
+</g>
+<g class="node" data-id="C3" data-label="힙" data-shape="rectangle">
+  <rect x="743.207" y="185.8" width="60" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="773.207" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">힙</text>
+</g>
+<g class="node" data-id="D1" data-label="탐색: DFS/BFS" data-shape="rectangle">
+  <rect x="831.207" y="185.8" width="133.834" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="898.124" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">탐색: DFS/BFS</text>
+</g>
+<g class="node" data-id="D2" data-label="정렬" data-shape="rectangle">
+  <rect x="993.0409999999999" y="185.8" width="71.59" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1028.836" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">정렬</text>
+</g>
+<g class="node" data-id="D3" data-label="재귀" data-shape="rectangle">
+  <rect x="1092.6309999999999" y="185.8" width="71.59" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1128.426" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">재귀</text>
+</g>
+<g class="node" data-id="D4" data-label="Big-O 분석" data-shape="rectangle">
+  <rect x="1192.221" y="185.8" width="105.67599999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1245.059" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Big-O 분석</text>
+</g>
+</svg>

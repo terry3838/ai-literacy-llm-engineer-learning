@@ -22,25 +22,7 @@ tags:
 
 ## 핵심 개념 맵
 
-```mermaid
-graph TB
-    A[개발환경 & 협업] --> B[개발환경 구성]
-    A --> C[Git 버전관리]
-    A --> D[GitHub 협업]
-    A --> E[Docker 인프라]
-
-    B --> B1[IDE/PyCharm]
-    B --> B2[uv/venv]
-    B --> B3[Python 환경]
-    C --> C1[init/add/commit]
-    C --> C2[branch/merge]
-    C --> C3[rebase/stash]
-    D --> D1[Pull Request]
-    D --> D2[Issue/Project]
-    E --> E1[컨테이너]
-    E --> E2[docker-compose]
-    E --> E3[MySQL]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__개발환경-버전관리__Week03-개발환경-Git-Docker__diagram_1.svg)
 
 ## 연결된 개념
 - [[Git]] - 분산 버전 관리 시스템

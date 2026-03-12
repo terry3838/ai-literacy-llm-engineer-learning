@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418.4227499999999 1534.068" width="418.4227499999999" height="1534.068" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="141.37349999999998,76.9 141.37349999999998,124.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="141.37349999999998,316.07899999999995 141.37349999999998,364.07899999999995" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="141.37349999999998,400.9789999999999 141.37349999999998,448.97900000000004" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="118.8963333333333,561.3648333333334 118.8963333333333,688.1419999999999 85.0673333333333,688.1419999999999 85.0673333333333,1445.168 121.03286666666665,1445.168 121.03286666666665,1457.168" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="F" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="163.85066666666665,561.3648333333334 163.85066666666665,619.842 190.52075,619.842 190.52075,700.1419999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="F" data-to="G" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="190.52075,737.0419999999999 190.52075,785.0419999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="168.04358333333332,897.4278333333333 168.04358333333332,1024.205 135.72599999999997,1024.205 135.72599999999997,1445.168 149.57806666666664,1445.168 149.57806666666664,1457.168" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="212.99791666666664,897.4278333333333 212.99791666666664,955.9049999999999 245.31549999999996,955.9049999999999 245.31549999999996,1036.205" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="H" data-to="I" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="245.31549999999996,1073.1049999999998 245.31549999999996,1121.1049999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="I" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="222.83833333333328,1233.490833333333 222.83833333333328,1291.9679999999998 197.27974999999995,1291.9679999999998 197.27974999999995,1445.168 178.12326666666664,1445.168 178.12326666666664,1457.168" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="I" data-to="J" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="267.7926666666666,1233.490833333333 267.7926666666666,1291.9679999999998 293.35124999999994,1291.9679999999998 293.35124999999994,1372.2679999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="J" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="293.35124999999994,1409.168 293.35124999999994,1445.168 206.66846666666666,1445.168 206.66846666666666,1457.168" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="D" data-to="E" data-label="Yes">
+  <rect x="66.5673333333333" y="1383.868" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="84.8963333333333" y="1399.018" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="D" data-to="F" data-label="No">
+  <rect x="175.02075" y="626.842" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="190.37975" y="641.992" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="edge-label" data-from="G" data-to="E" data-label="Yes">
+  <rect x="117.22599999999997" y="1383.868" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="135.55499999999998" y="1399.018" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="G" data-to="H" data-label="No">
+  <rect x="229.81549999999996" y="962.9049999999999" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="245.17449999999997" y="978.0549999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="edge-label" data-from="I" data-to="E" data-label="Yes">
+  <rect x="178.77974999999995" y="1298.9679999999998" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="197.10874999999996" y="1314.118" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="I" data-to="J" data-label="No">
+  <rect x="277.85124999999994" y="1298.9679999999998" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="293.2102499999999" y="1314.118" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="node" data-id="A" data-label="아이디어 발굴" data-shape="rectangle">
+  <rect x="74.82699999999997" y="40" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="141.37349999999998" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">아이디어 발굴</text>
+</g>
+<g class="node" data-id="B" data-label="Backward Discovery" data-shape="diamond">
+  <polygon points="141.37349999999998,124.9 236.96299999999997,220.4895 141.37349999999998,316.07899999999995 45.78399999999999,220.4895" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="141.37349999999998" y="220.4895" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Backward Discovery</text>
+</g>
+<g class="node" data-id="C" data-label="Level 1: Prompt Engineering" data-shape="rectangle">
+  <rect x="40" y="364.07899999999995" width="202.74699999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="141.37349999999998" y="382.52899999999994" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Level 1: Prompt Engineering</text>
+</g>
+<g class="node" data-id="D" data-label="해결 가능?" data-shape="diamond">
+  <polygon points="141.37349999999998,448.97900000000004 208.80499999999998,516.4105000000001 141.37349999999998,583.8420000000001 73.94199999999998,516.4105000000001" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="141.37349999999998" y="516.4105000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">해결 가능?</text>
+</g>
+<g class="node" data-id="E" data-label="배포 &amp; 모니터링" data-shape="rectangle">
+  <rect x="92.48766666666663" y="1457.168" width="142.726" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="163.85066666666663" y="1475.618" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">배포 &amp; 모니터링</text>
+</g>
+<g class="node" data-id="F" data-label="Level 2: Agent Pipeline" data-shape="rectangle">
+  <rect x="103.22624999999996" y="700.1419999999999" width="174.589" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="190.52074999999996" y="718.592" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Level 2: Agent Pipeline</text>
+</g>
+<g class="node" data-id="G" data-label="해결 가능?" data-shape="diamond">
+  <polygon points="190.52074999999996,785.0419999999999 257.95224999999994,852.4735 190.52074999999996,919.905 123.08924999999996,852.4735" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="190.52074999999996" y="852.4735" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">해결 가능?</text>
+</g>
+<g class="node" data-id="H" data-label="Level 3: Fine Tuning" data-shape="rectangle">
+  <rect x="164.68999999999994" y="1036.205" width="161.251" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="245.31549999999993" y="1054.655" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Level 3: Fine Tuning</text>
+</g>
+<g class="node" data-id="I" data-label="해결 가능?" data-shape="diamond">
+  <polygon points="245.31549999999996,1121.1049999999998 312.74699999999996,1188.5364999999997 245.31549999999996,1255.9679999999996 177.88399999999996,1188.5364999999997" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="245.31549999999996" y="1188.5364999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">해결 가능?</text>
+</g>
+<g class="node" data-id="J" data-label="Level 4: Post Training" data-shape="rectangle">
+  <rect x="208.27974999999995" y="1372.2679999999998" width="170.143" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="293.35124999999994" y="1390.7179999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Level 4: Post Training</text>
+</g>
+</svg>

@@ -51,23 +51,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph LR
-    A[사용자 질문] --> B[Query 처리]
-    B --> C[벡터 검색]
-    C --> D[관련 문서 검색]
-    D --> E[Re-ranking]
-    E --> F[컨텍스트 구성]
-    F --> G[LLM 생성]
-    G --> H[응답]
-
-    subgraph 인덱싱
-    I[문서] --> J[청크 분할]
-    J --> K[임베딩]
-    K --> L[(벡터 DB)]
-    end
-    L --> C
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Prompt-Engineering-RAG__W05D03-RAG-기초__diagram_1.svg)
 
 ## 연결된 개념
 - [[RAG]]

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 697.3878333333332 286.70000000000005" width="697.3878333333332" height="286.70000000000005" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="PI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="261.7115,76.9 261.7115,94.9 107.28750000000001,94.9 107.28750000000001,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="JB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="261.7115,76.9 261.7115,94.9 598.6218333333333,94.9 598.6218333333333,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="DL" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="261.7115,76.9 261.7115,94.9 261.7115,94.9 261.7115,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="IV" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="422.5383666666667,149.8 422.5383666666667,173.8 124.52966666666669,173.8 124.52966666666669,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="OF" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="422.5383666666667,149.8 422.5383666666667,173.8 281.4236666666667,173.8 281.4236666666667,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="GR" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="422.5383666666667,149.8 422.5383666666667,173.8 581.0091666666666,173.8 581.0091666666666,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="LJ" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="422.5383666666667,149.8 422.5383666666667,173.8 434.36566666666664,173.8 434.36566666666664,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PI" data-to="IV" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="107.28750000000001,149.8 107.28750000000002,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="JB" data-to="GR" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="598.6218333333333,149.8 598.6218333333334,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DL" data-to="OF" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="261.7115,149.8 261.7115,197.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="A" data-label="공격 벡터" data-shape="rectangle">
+  <rect x="209.98499999999999" y="40" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="261.7115" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">공격 벡터</text>
+</g>
+<g class="node" data-id="PI" data-label="Prompt Injection" data-shape="rectangle">
+  <rect x="40" y="112.9" width="134.57500000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="107.28750000000001" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Prompt Injection</text>
+</g>
+<g class="node" data-id="JB" data-label="Jailbreaking" data-shape="rectangle">
+  <rect x="539.8558333333333" y="112.9" width="117.532" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="598.6218333333333" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Jailbreaking</text>
+</g>
+<g class="node" data-id="DL" data-label="데이터 유출" data-shape="rectangle">
+  <rect x="202.57500000000002" y="112.9" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="261.7115" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">데이터 유출</text>
+</g>
+<g class="node" data-id="D" data-label="방어 레이어" data-shape="rectangle">
+  <rect x="363.4018666666667" y="112.9" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="422.5383666666667" y="131.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">방어 레이어</text>
+</g>
+<g class="node" data-id="IV" data-label="입력 검증" data-shape="rectangle">
+  <rect x="72.80316666666668" y="197.8" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="124.52966666666669" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">입력 검증</text>
+</g>
+<g class="node" data-id="OF" data-label="출력 필터링" data-shape="rectangle">
+  <rect x="222.2871666666667" y="197.8" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="281.4236666666667" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">출력 필터링</text>
+</g>
+<g class="node" data-id="GR" data-label="Guardrails" data-shape="rectangle">
+  <rect x="528.1711666666666" y="197.8" width="105.676" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="581.0091666666666" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Guardrails</text>
+</g>
+<g class="node" data-id="LJ" data-label="LLM-as-Judge" data-shape="rectangle">
+  <rect x="368.56016666666665" y="197.8" width="131.611" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="434.36566666666664" y="216.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LLM-as-Judge</text>
+</g>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.055 423.3" width="505.055" height="423.3" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="HTTP 요청" points="97.42633333333333,76.9 97.42633333333333,112.9 72,112.9 72,181.2 96.19133333333333,181.2 96.19133333333333,193.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="요청 전달" points="96.19133333333333,230.10000000000002 96.19133333333333,290.1 74.376,290.1 74.376,334.40000000000003 156.99179999999998,334.40000000000003 156.99179999999998,346.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="데이터 요청" points="192.7414,346.40000000000003 192.7414,322.40000000000003 222.28,322.40000000000003 222.28,266.1 290.1096,266.1 290.1096,76.90000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="DB 접근" points="332.9728,76.90000000000003 332.9728,112.90000000000005 351.90200000000004,112.90000000000005 351.90200000000004,181.20000000000005 362.24833333333333,181.20000000000005 362.24833333333333,193.20000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="결과" points="395.00366666666673,193.20000000000005 395.00366666666673,181.20000000000005 405.35,181.20000000000005 405.35,112.90000000000005 354.4044,112.90000000000005 354.4044,76.90000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="데이터" points="311.5412,76.90000000000003 311.5412,290.1 292.61199999999997,290.1 292.61199999999997,334.40000000000003 210.6162,334.40000000000003 210.6162,346.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="응답 생성" points="174.8666,346.40000000000003 174.8666,322.40000000000003 145.328,322.40000000000003 145.328,266.1 123.51266666666666,266.1 123.51266666666666,230.10000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="HTTP 응답" points="123.51266666666666,193.2 123.51266666666666,181.2 147.704,181.2 147.704,112.9 122.27766666666666,112.9 122.27766666666666,76.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="A" data-to="B" data-label="HTTP 요청">
+  <rect x="36" y="119.9" width="71.70400000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="71.852" y="135.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">HTTP 요청</text>
+</g>
+<g class="edge-label" data-from="B" data-to="C" data-label="요청 전달">
+  <rect x="40.876000000000005" y="297.1" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="74.352" y="312.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">요청 전달</text>
+</g>
+<g class="edge-label" data-from="C" data-to="D" data-label="데이터 요청">
+  <rect x="182.78" y="273.1" width="78.83200000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="222.196" y="288.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">데이터 요청</text>
+</g>
+<g class="edge-label" data-from="D" data-to="E" data-label="DB 접근">
+  <rect x="322.90200000000004" y="119.90000000000003" width="57.44799999999999" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="351.62600000000003" y="135.05000000000004" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">DB 접근</text>
+</g>
+<g class="edge-label" data-from="E" data-to="D" data-label="결과">
+  <rect x="384.35" y="119.90000000000003" width="41.41" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="405.055" y="135.05000000000004" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">결과</text>
+</g>
+<g class="edge-label" data-from="D" data-to="C" data-label="데이터">
+  <rect x="265.61199999999997" y="297.1" width="53.29" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="292.25699999999995" y="312.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">데이터</text>
+</g>
+<g class="edge-label" data-from="C" data-to="B" data-label="응답 생성">
+  <rect x="111.828" y="273.1" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="145.304" y="288.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">응답 생성</text>
+</g>
+<g class="edge-label" data-from="B" data-to="A" data-label="HTTP 응답">
+  <rect x="111.70400000000001" y="119.9" width="71.70400000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="147.556" y="135.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">HTTP 응답</text>
+</g>
+<g class="node" data-id="A" data-label="Client" data-shape="rectangle">
+  <rect x="72.57499999999999" y="40" width="74.554" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="109.85199999999999" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Client</text>
+</g>
+<g class="node" data-id="B" data-label="Router" data-shape="rectangle">
+  <rect x="68.87" y="193.2" width="81.964" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="109.852" y="211.64999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Router</text>
+</g>
+<g class="node" data-id="C" data-label="Service" data-shape="rectangle">
+  <rect x="139.117" y="346.40000000000003" width="89.374" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="183.80399999999997" y="364.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Service</text>
+</g>
+<g class="node" data-id="D" data-label="Repository" data-shape="rectangle">
+  <rect x="268.678" y="40.00000000000003" width="107.158" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="322.257" y="58.45000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Repository</text>
+</g>
+<g class="node" data-id="E" data-label="Database" data-shape="cylinder">
+  <rect x="329.49300000000005" y="200.20000000000005" width="98.26599999999999" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="329.49300000000005" y1="200.20000000000005" x2="329.49300000000005" y2="237.10000000000005" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="427.759" y1="200.20000000000005" x2="427.759" y2="237.10000000000005" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="378.62600000000003" cy="237.10000000000005" rx="49.132999999999996" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="378.62600000000003" cy="200.20000000000005" rx="49.132999999999996" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="378.62600000000003" y="218.65000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Database</text>
+</g>
+</svg>

@@ -26,12 +26,7 @@ status: complete
 
 **핵심 명령어 3단계**
 
-```mermaid
-graph LR
-    A[Working Directory] -->|git add| B[Staging Area]
-    B -->|git commit| C[Repository]
-    C -->|git push| D[Remote]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__개발환경-버전관리__W03D02-Git-기본-심화__diagram_1.svg)
 
 | 명령어 | 설명 |
 |--------|------|

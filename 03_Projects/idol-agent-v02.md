@@ -22,25 +22,7 @@ status: complete
 
 ## 아키텍처
 
-```mermaid
-flowchart TD
-    Client[클라이언트] --> API[FastAPI\nchat endpoint]
-    API --> Graph[LangGraph Graph]
-
-    Graph --> Classify[intent_classifier\n의도 분류]
-    Classify -->|chat| Generate[response_generator\n응답 생성]
-    Classify -->|rag| RAG[rag_retriever\nRAG 검색]
-    Classify -->|tool| Tool[tool_executor\n도구 실행]
-
-    RAG --> Generate
-    Tool --> Generate
-
-    Generate --> API
-
-    RAG --> DB[(Supabase\npgvector)]
-    Classify --> LLM[Solar LLM\nLLM]
-    Generate --> LLM
-```
+![Diagram 1](../assets/diagrams/03_Projects__idol-agent-v02__diagram_1.svg)
 
 ## 프로젝트 구조
 

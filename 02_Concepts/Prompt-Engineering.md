@@ -32,17 +32,7 @@ importance: high
 
 ## 기법 계층도
 
-```mermaid
-flowchart TD
-    PE[Prompt Engineering] --> ZS[Zero-shot]
-    PE --> FS[Few-shot]
-    PE --> CoT[Chain of Thought]
-    PE --> PC[Prompt Chaining]
-    CoT --> SC[Self-Consistency]
-    CoT --> ToT[Tree of Thought]
-    PC --> RAG_INT[RAG 통합]
-    FS --> IC[In-Context Learning]
-```
+![Diagram 1](../assets/diagrams/02_Concepts__Prompt-Engineering__diagram_1.svg)
 
 ## 관련 개념
 

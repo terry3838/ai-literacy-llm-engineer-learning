@@ -20,12 +20,7 @@ status: complete
 
 ## 아키텍처
 
-```mermaid
-flowchart LR
-    A[HTML 슬라이드\nslide1~7.html] --> B[Playwright\n렌더링/캡처]
-    B --> C[pptxgenjs\nPPTX 생성]
-    C --> D[출력\n.pptx 파일]
-```
+![Diagram 1](../assets/diagrams/03_Projects__ppt-workspace__diagram_1.svg)
 
 ## 프로젝트 구조
 

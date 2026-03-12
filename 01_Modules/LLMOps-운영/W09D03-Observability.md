@@ -44,24 +44,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph TB
-    subgraph Agent Service
-        A[에이전트 실행] --> B[Logging]
-        A --> C[Tracing]
-        A --> D[Metrics]
-    end
-
-    subgraph Observability Platform
-        B --> E[로그 수집기]
-        C --> F[LangSmith/LangFuse]
-        D --> G[메트릭 수집기]
-        E --> H[대시보드]
-        F --> H
-        G --> H
-        H --> I[알림/알럿]
-    end
-```
+![Diagram 1](../../assets/diagrams/01_Modules__LLMOps-운영__W09D03-Observability__diagram_1.svg)
 
 ## 연결된 개념
 - [[AgentOps]] - 에이전트 운영 관리

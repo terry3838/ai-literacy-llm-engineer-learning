@@ -33,20 +33,7 @@ importance: high
 
 ## 에이전트 루프 다이어그램
 
-```mermaid
-flowchart TD
-    P[Perceive\n입력 수신] --> T[Think\nLLM 추론]
-    T --> D{행동 결정}
-    D -- "도구 호출" --> A[Act\n도구 실행]
-    D -- "완료" --> R[응답 반환]
-    A --> O[Observe\n결과 관찰]
-    O --> T
-
-    style P fill:#2196F3,color:#fff
-    style T fill:#9C27B0,color:#fff
-    style A fill:#FF9800,color:#fff
-    style R fill:#4CAF50,color:#fff
-```
+![Diagram 1](../assets/diagrams/02_Concepts__Agent-Architecture__diagram_1.svg)
 
 ## 관련 개념
 

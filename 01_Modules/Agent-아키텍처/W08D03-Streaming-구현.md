@@ -44,25 +44,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-sequenceDiagram
-    participant User as 사용자
-    participant UI as Gradio UI
-    participant API as FastAPI
-    participant Graph as LangGraph
-    participant LLM as Solar LLM
-
-    User->>UI: 메시지 입력
-    UI->>API: POST /chat (stream=true)
-    API->>Graph: astream_events()
-    Graph->>LLM: 토큰 생성 요청
-    loop 토큰 단위
-        LLM-->>Graph: 토큰
-        Graph-->>API: SSE event
-        API-->>UI: StreamingResponse
-        UI-->>User: 실시간 표시
-    end
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Agent-아키텍처__W08D03-Streaming-구현__diagram_1.svg)
 
 ## 연결된 개념
 - [[LangGraph]] - LangGraph 스트리밍 API

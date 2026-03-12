@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961.6589999999999 249.6686666666667" width="961.6589999999999" height="249.6686666666667" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="150.863,148.33350000000002 186.863,148.33350000000002 186.863,112.989 198.863,112.989" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="331.956,112.989 379.956,112.989" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="dev" points="501.60433333333333,88.65933333333334 561.934,88.65933333333334 561.934,72.089 651.78,72.089" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="prod" points="501.60433333333333,137.31866666666667 561.934,137.31866666666667 561.934,153.889 651.78,153.889" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="F" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="767.8299999999999,153.889 806.2059999999999,153.889 806.2059999999999,177.06866666666667 818.2059999999999,177.06866666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="F" data-to="A" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="818.2059999999999,189.36866666666668 806.2059999999999,189.36866666666668 806.2059999999999,201.6686666666667 367.956,201.6686666666667 367.956,160.63350000000003 150.863,160.63350000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="C" data-to="D" data-label="dev">
+  <rect x="569.934" y="56.089000000000006" width="35.47" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="587.669" y="71.239" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">dev</text>
+</g>
+<g class="edge-label" data-from="C" data-to="E" data-label="prod">
+  <rect x="569.934" y="137.889" width="40.221999999999994" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="590.045" y="153.03900000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">prod</text>
+</g>
+<g class="node" data-id="A" data-label="Graph 실행" data-shape="rectangle">
+  <rect x="40" y="136.0335" width="110.863" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="95.4315" y="154.4835" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Graph 실행</text>
+</g>
+<g class="node" data-id="B" data-label="State 업데이트" data-shape="rectangle">
+  <rect x="198.863" y="94.539" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="265.4095" y="112.989" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">State 업데이트</text>
+</g>
+<g class="node" data-id="C" data-label="Checkpointer" data-shape="diamond">
+  <polygon points="452.94500000000005,40 525.9340000000001,112.989 452.94500000000005,185.978 379.956,112.989" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="452.94500000000005" y="112.989" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Checkpointer</text>
+</g>
+<g class="node" data-id="D" data-label="MemorySaver
+인메모리" data-shape="rectangle">
+  <rect x="651.78" y="45.18899999999999" width="127.16499999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="715.3625" y="72.089" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="715.3625" dy="-3.9000000000000012">MemorySaver</tspan><tspan x="715.3625" dy="16.900000000000002">인메모리</tspan></text>
+</g>
+<g class="node" data-id="E" data-label="PostgreSQL
+Supabase" data-shape="rectangle">
+  <rect x="651.78" y="126.989" width="116.04999999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="709.805" y="153.889" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="709.805" dy="-3.9000000000000012">PostgreSQL</tspan><tspan x="709.805" dy="16.900000000000002">Supabase</tspan></text>
+</g>
+<g class="node" data-id="F" data-label="상태 복원" data-shape="rectangle">
+  <rect x="818.2059999999999" y="164.76866666666666" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="869.9324999999999" y="183.21866666666665" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">상태 복원</text>
+</g>
+</svg>

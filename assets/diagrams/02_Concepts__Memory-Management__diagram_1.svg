@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890.4395 303.6" width="890.4395" height="303.6" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="M" data-to="ST" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="549.6635,76.9 549.6635,94.9 210.61974999999995,94.9 210.61974999999995,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="M" data-to="LT" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="549.6635,76.9 549.6635,94.9 469.117,94.9 469.117,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="M" data-to="EP" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="549.6635,76.9 549.6635,94.9 630.21,94.9 630.21,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="M" data-to="SE" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="549.6635,76.9 549.6635,94.9 791.303,94.9 791.303,112.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ST" data-to="CB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="210.61974999999995,166.70000000000002 210.61974999999995,190.70000000000002 119.8845,190.70000000000002 119.8845,214.70000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ST" data-to="SM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="210.61974999999995,166.70000000000002 210.61974999999995,190.70000000000002 301.355,190.70000000000002 301.355,214.70000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="LT" data-to="VM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="469.117,166.70000000000002 469.117,214.70000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="M" data-label="에이전트 메모리" data-shape="rectangle">
+  <rect x="475.707" y="40" width="147.913" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="549.6635" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">에이전트 메모리</text>
+</g>
+<g class="node" data-id="ST" data-label="단기 메모리
+컨텍스트 윈도우" data-shape="rectangle">
+  <rect x="136.66324999999995" y="112.9" width="147.913" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="210.61974999999995" y="139.8" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="210.61974999999995" dy="-3.9000000000000012">단기 메모리</tspan><tspan x="210.61974999999995" dy="16.900000000000002">컨텍스트 윈도우</tspan></text>
+</g>
+<g class="node" data-id="LT" data-label="장기 메모리
+벡터 DB" data-shape="rectangle">
+  <rect x="409.9805" y="112.9" width="118.273" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="469.117" y="139.8" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="469.117" dy="-3.9000000000000012">장기 메모리</tspan><tspan x="469.117" dy="16.900000000000002">벡터 DB</tspan></text>
+</g>
+<g class="node" data-id="EP" data-label="에피소드 메모리
+경험 기록" data-shape="rectangle">
+  <rect x="556.2535" y="112.9" width="147.913" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="630.21" y="139.8" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="630.21" dy="-3.9000000000000012">에피소드 메모리</tspan><tspan x="630.21" dy="16.900000000000002">경험 기록</tspan></text>
+</g>
+<g class="node" data-id="SE" data-label="의미 메모리
+도메인 지식" data-shape="rectangle">
+  <rect x="732.1665" y="112.9" width="118.273" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="791.303" y="139.8" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="791.303" dy="-3.9000000000000012">의미 메모리</tspan><tspan x="791.303" dy="16.900000000000002">도메인 지식</tspan></text>
+</g>
+<g class="node" data-id="CB" data-label="Conversation Buffer" data-shape="rectangle">
+  <rect x="40" y="214.70000000000002" width="159.769" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="119.8845" y="233.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Conversation Buffer</text>
+</g>
+<g class="node" data-id="SM" data-label="Summary Memory" data-shape="rectangle">
+  <rect x="227.769" y="214.70000000000002" width="147.172" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="301.355" y="233.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Summary Memory</text>
+</g>
+<g class="node" data-id="VM" data-label="Vector Memory" data-shape="rectangle">
+  <rect x="402.94100000000003" y="214.70000000000002" width="132.35199999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="469.117" y="233.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Vector Memory</text>
+</g>
+</svg>

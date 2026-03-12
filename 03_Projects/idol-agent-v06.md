@@ -25,25 +25,7 @@ status: complete
 
 ## 아키텍처
 
-```mermaid
-flowchart TD
-    subgraph Docker["Docker Container"]
-        API[FastAPI App]
-        API --> Router[LiteLLM Router]
-        Router -->|primary| Solar[Solar LLM]
-        Router -->|fallback| Gemini[Gemini API]
-        API --> Graph[LangGraph Agent]
-        Graph --> Tools[Tool Executor\n+ Error Handling]
-    end
-
-    Client[클라이언트] --> Docker
-    Graph --> DB[(Supabase)]
-
-    subgraph CICD["CI/CD"]
-        GH[GitHub Actions] --> Build[Docker Build]
-        Build --> Deploy[배포]
-    end
-```
+![Diagram 1](../assets/diagrams/03_Projects__idol-agent-v06__diagram_1.svg)
 
 ## v0.2 대비 추가 사항
 

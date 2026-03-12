@@ -25,14 +25,7 @@ importance: low
 
 ## 파이프라인 흐름
 
-```mermaid
-flowchart LR
-    GIT["git push"] --> CI["CI\n빌드+테스트"]
-    CI -- "통과" --> DR["Docker\n이미지 빌드"]
-    DR --> REG["컨테이너\n레지스트리"]
-    REG --> DEP["클라우드\n배포"]
-    CI -- "실패" --> NOT["알림"]
-```
+![Diagram 1](../assets/diagrams/02_Concepts__CI-CD__diagram_1.svg)
 
 ## 관련 개념
 

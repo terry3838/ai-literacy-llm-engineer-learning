@@ -34,16 +34,7 @@ RAG는 LLM의 환각(Hallucination)을 줄이고, 학습 데이터 기준일 이
 
 ## 아키텍처 다이어그램
 
-```mermaid
-flowchart LR
-    Q[사용자 질의] --> E[임베딩 모델]
-    E --> V[(벡터 DB)]
-    V --> R[관련 문서 검색]
-    R --> C[컨텍스트 구성]
-    C --> L[LLM]
-    Q --> L
-    L --> A[최종 답변]
-```
+![Diagram 1](../assets/diagrams/02_Concepts__RAG__diagram_1.svg)
 
 ## 관련 개념
 

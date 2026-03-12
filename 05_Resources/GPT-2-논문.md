@@ -19,13 +19,7 @@ tags:
 
 ## 아키텍처
 
-```mermaid
-flowchart LR
-    A[텍스트 입력] --> B[Byte Pair\nEncoding]
-    B --> C[Transformer\nDecoder x 48]
-    C --> D[다음 토큰 예측]
-    D --> E[텍스트 생성]
-```
+![Diagram 1](../assets/diagrams/05_Resources__GPT-2-논문__diagram_1.svg)
 
 ## 주요 발견
 - 모델 크기가 클수록 zero-shot 성능 향상 (scaling law의 초기 증거)

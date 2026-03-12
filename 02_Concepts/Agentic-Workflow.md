@@ -30,22 +30,7 @@ Agentic Workflow는 단일 에이전트와 멀티 에이전트 두 가지 형태
 
 ## 워크플로우 패턴
 
-```mermaid
-flowchart TD
-    subgraph 단일에이전트
-        A1[입력] --> A2[LLM 추론]
-        A2 --> A3{완료?}
-        A3 -- No --> A4[도구 실행]
-        A4 --> A2
-        A3 -- Yes --> A5[출력]
-    end
-    subgraph 멀티에이전트
-        S[Supervisor] --> W1[Worker 1]
-        S --> W2[Worker 2]
-        W1 --> S
-        W2 --> S
-    end
-```
+![Diagram 1](../assets/diagrams/02_Concepts__Agentic-Workflow__diagram_1.svg)
 
 ## 관련 개념
 

@@ -23,19 +23,7 @@ status: complete
 
 ## 아키텍처
 
-```mermaid
-flowchart TD
-    API[FastAPI] --> Graph[LangGraph Agent]
-    Graph --> CP{Checkpointer}
-    CP -->|dev| Memory[MemorySaver]
-    CP -->|prod| PG[(PostgreSQL\nCheckpointer)]
-
-    Graph --> TC[Token Counter\ntiktoken]
-    TC --> CT[Cost Tracker]
-    CT --> Discord[Discord Webhook\n비용 알림]
-
-    Graph --> Trim[Message Trimmer\n컨텍스트 관리]
-```
+![Diagram 1](../assets/diagrams/03_Projects__idol-agent-v07__diagram_1.svg)
 
 ## v0.6 대비 추가 사항
 

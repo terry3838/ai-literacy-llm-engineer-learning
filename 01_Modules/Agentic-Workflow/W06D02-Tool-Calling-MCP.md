@@ -51,21 +51,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-sequenceDiagram
-    participant User as 사용자
-    participant LLM as LLM
-    participant MCP as MCP 서버
-    participant Tool as 외부 도구
-
-    User->>LLM: 질문/요청
-    LLM->>LLM: 도구 필요성 판단
-    LLM->>MCP: 도구 호출 요청
-    MCP->>Tool: 실행
-    Tool-->>MCP: 결과
-    MCP-->>LLM: 결과 반환
-    LLM-->>User: 최종 응답
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Agentic-Workflow__W06D02-Tool-Calling-MCP__diagram_1.svg)
 
 ## 연결된 개념
 - [[Tool Calling]]

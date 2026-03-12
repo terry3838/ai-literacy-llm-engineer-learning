@@ -54,25 +54,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph TB
-    A[컨텍스트 입력] --> B{입력 검증}
-    B -->|안전| C[컨텍스트 엔지니어링]
-    B -->|위험| D[차단/필터링]
-    C --> E[에이전트 실행]
-    E --> F{출력 모니터링}
-    F -->|안전| G[응답 반환]
-    F -->|위험| H[가드레일 적용]
-    H --> G
-
-    subgraph Context Lifecycle
-        C --> I[생성]
-        I --> J[저장]
-        J --> K[검색]
-        K --> L[활용]
-        L --> M[갱신]
-    end
-```
+![Diagram 1](../../assets/diagrams/01_Modules__Agentic-Workflow__W06D04-Context-Engineering-Safety__diagram_1.svg)
 
 ## 연결된 개념
 - [[Context-Engineering]] - 컨텍스트 엔지니어링 핵심 개념

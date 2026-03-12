@@ -46,18 +46,7 @@ status: complete
 
 ## 흐름도
 
-```mermaid
-graph TB
-    A[에이전트] --> B[LiteLLM Proxy]
-    B --> C{라우팅}
-    C -->|Primary| D[Solar LLM]
-    C -->|Fallback| E[OpenAI GPT]
-    C -->|Fallback| F[기타 LLM]
-
-    B --> G[Cost Tracking]
-    B --> H[Rate Limit 관리]
-    B --> I[로드 밸런싱]
-```
+![Diagram 1](../../assets/diagrams/01_Modules__LLMOps-운영__W09D01-API-이슈-LiteLLM__diagram_1.svg)
 
 ## 연결된 개념
 - [[LiteLLM]] - LiteLLM 프레임워크

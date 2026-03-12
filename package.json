@@ -1,0 +1,11 @@
+{
+  "name": "ai-literacy-llm-engineer-learning",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:diagrams": "node tools/render_diagrams.mjs"
+  },
+  "dependencies": {
+    "beautiful-mermaid": "^1.1.3"
+  }
+}

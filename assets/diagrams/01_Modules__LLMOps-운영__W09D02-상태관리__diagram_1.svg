@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.1755 799.1529999999999" width="367.1755" height="799.1529999999999" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="190.798,76.9 190.798,124.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="기존 세션" points="169.55583333333334,231.11083333333335 169.55583333333334,288.353 113.9565,288.353 113.9565,368.653" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="새 세션" points="212.04016666666666,231.11083333333335 212.04016666666666,288.353 267.6395,288.353 267.6395,368.653" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="113.9565,405.553 113.9565,429.553 190.798,429.553 190.798,453.553" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="267.6395,405.553 267.6395,429.553 190.798,429.553 190.798,453.553" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="F" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="190.798,490.453 190.798,514.453 117.6615,514.453 117.6615,538.453" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="F" data-to="G" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="117.6615,575.353 117.6615,623.353" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="117.6615,660.2529999999999 117.6615,708.2529999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="I" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="190.798,490.453 190.798,514.453 263.9345,514.453 263.9345,538.453" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="B" data-to="C" data-label="기존 세션">
+  <rect x="80.4565" y="295.353" width="66.952" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="113.9325" y="310.503" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">기존 세션</text>
+</g>
+<g class="edge-label" data-from="B" data-to="D" data-label="새 세션">
+  <rect x="239.6395" y="295.353" width="55.072" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="267.1755" y="310.503" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">새 세션</text>
+</g>
+<g class="node" data-id="A" data-label="사용자 요청" data-shape="rectangle">
+  <rect x="131.66150000000002" y="40" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="190.798" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">사용자 요청</text>
+</g>
+<g class="node" data-id="B" data-label="세션 확인" data-shape="diamond">
+  <polygon points="190.798,124.90000000000002 254.5245,188.62650000000002 190.798,252.353 127.0715,188.62650000000002" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="190.798" y="188.62650000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">세션 확인</text>
+</g>
+<g class="node" data-id="C" data-label="체크포인트 로드" data-shape="rectangle">
+  <rect x="40" y="368.653" width="147.913" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="113.9565" y="387.103" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">체크포인트 로드</text>
+</g>
+<g class="node" data-id="D" data-label="세션 생성" data-shape="rectangle">
+  <rect x="215.913" y="368.653" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="267.6395" y="387.103" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">세션 생성</text>
+</g>
+<g class="node" data-id="E" data-label="LangGraph 실행" data-shape="rectangle">
+  <rect x="119.8055" y="453.553" width="141.985" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="190.798" y="472.003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">LangGraph 실행</text>
+</g>
+<g class="node" data-id="F" data-label="상태 업데이트" data-shape="rectangle">
+  <rect x="51.114999999999995" y="538.453" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="117.6615" y="556.903" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">상태 업데이트</text>
+</g>
+<g class="node" data-id="G" data-label="체크포인트 저장" data-shape="rectangle">
+  <rect x="43.705" y="623.353" width="147.913" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="117.6615" y="641.803" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">체크포인트 저장</text>
+</g>
+<g class="node" data-id="H" data-label="Supabase" data-shape="cylinder">
+  <rect x="66.30550000000001" y="715.2529999999999" width="102.71199999999999" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="66.30550000000001" y1="715.2529999999999" x2="66.30550000000001" y2="752.1529999999999" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="169.01749999999998" y1="715.2529999999999" x2="169.01749999999998" y2="752.1529999999999" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="117.6615" cy="752.1529999999999" rx="51.355999999999995" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="117.6615" cy="715.2529999999999" rx="51.355999999999995" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="117.6615" y="733.703" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Supabase</text>
+</g>
+<g class="node" data-id="I" data-label="응답 반환" data-shape="rectangle">
+  <rect x="212.20800000000003" y="538.453" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="263.9345" y="556.903" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">응답 반환</text>
+</g>
+</svg>

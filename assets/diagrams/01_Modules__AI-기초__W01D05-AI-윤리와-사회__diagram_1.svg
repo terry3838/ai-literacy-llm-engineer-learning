@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1515.0260000000003 274.70000000000005" width="1515.0260000000003" height="274.70000000000005" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="516.2200833333335,76.9 516.2200833333335,91.9 147.26425,91.9 147.26425,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="516.2200833333335,76.9 516.2200833333335,91.9 370.5267500000001,91.9 370.5267500000001,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="516.2200833333335,76.9 516.2200833333335,91.9 712.6825000000002,91.9 712.6825000000002,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="516.2200833333335,76.9 516.2200833333335,91.9 1206.8540000000003,91.9 1206.8540000000003,106.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="147.26425,143.8 147.26425,161.8 91.7265,161.8 91.7265,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="147.26425,143.8 147.26425,161.8 202.80199999999996,161.8 202.80199999999996,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="370.5267500000001,143.8 370.5267500000001,161.8 305.35600000000005,161.8 305.35600000000005,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="C2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="370.5267500000001,143.8 370.5267500000001,161.8 435.6975000000001,161.8 435.6975000000001,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="712.6825000000002,143.8 712.6825000000002,161.8 570.485,161.8 570.485,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="712.6825000000002,143.8 712.6825000000002,161.8 712.6825000000001,161.8 712.6825000000001,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D" data-to="D3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="712.6825000000002,143.8 712.6825000000002,161.8 865.9950000000001,161.8 865.9950000000001,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="E1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1206.8540000000003,143.8 1206.8540000000003,161.8 1003.3760000000001,161.8 1003.3760000000001,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="E2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1206.8540000000003,143.8 1206.8540000000003,161.8 1133.7175,161.8 1133.7175,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="E3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1206.8540000000003,143.8 1206.8540000000003,161.8 1279.9904999999999,161.8 1279.9904999999999,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="E4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1206.8540000000003,143.8 1206.8540000000003,161.8 1424.7815000000003,161.8 1424.7815000000003,179.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="A" data-label="AI 윤리" data-shape="rectangle">
+  <rect x="473.38558333333344" y="40" width="85.66900000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="516.2200833333335" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">AI 윤리</text>
+</g>
+<g class="node" data-id="B" data-label="공정성" data-shape="rectangle">
+  <rect x="104.05925" y="106.9" width="86.41" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="147.26425" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">공정성</text>
+</g>
+<g class="node" data-id="C" data-label="신뢰성" data-shape="rectangle">
+  <rect x="327.3217500000001" y="106.9" width="86.41" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="370.5267500000001" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">신뢰성</text>
+</g>
+<g class="node" data-id="D" data-label="정책/규제" data-shape="rectangle">
+  <rect x="660.2150000000003" y="106.9" width="104.93499999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="712.6825000000002" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">정책/규제</text>
+</g>
+<g class="node" data-id="E" data-label="사회적 영향" data-shape="rectangle">
+  <rect x="1147.7175000000002" y="106.9" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1206.8540000000003" y="125.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">사회적 영향</text>
+</g>
+<g class="node" data-id="B1" data-label="편향 문제" data-shape="rectangle">
+  <rect x="40" y="179.8" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="91.7265" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">편향 문제</text>
+</g>
+<g class="node" data-id="B2" data-label="XAI" data-shape="rectangle">
+  <rect x="171.45299999999997" y="179.8" width="62.69799999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="202.80199999999996" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">XAI</text>
+</g>
+<g class="node" data-id="C1" data-label="투명성" data-shape="rectangle">
+  <rect x="262.15100000000007" y="179.8" width="86.41" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="305.35600000000005" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">투명성</text>
+</g>
+<g class="node" data-id="C2" data-label="검증 가능성" data-shape="rectangle">
+  <rect x="376.5610000000001" y="179.8" width="118.273" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="435.6975000000001" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">검증 가능성</text>
+</g>
+<g class="node" data-id="D1" data-label="EU AI Act" data-shape="rectangle">
+  <rect x="522.8340000000001" y="179.8" width="95.30199999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="570.485" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">EU AI Act</text>
+</g>
+<g class="node" data-id="D2" data-label="유네스코 권고" data-shape="rectangle">
+  <rect x="646.1360000000001" y="179.8" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="712.6825000000001" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">유네스코 권고</text>
+</g>
+<g class="node" data-id="D3" data-label="한국 AI 윤리" data-shape="rectangle">
+  <rect x="807.2290000000002" y="179.8" width="117.532" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="865.9950000000001" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">한국 AI 윤리</text>
+</g>
+<g class="node" data-id="E1" data-label="딥페이크" data-shape="rectangle">
+  <rect x="952.7610000000001" y="179.8" width="101.22999999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1003.3760000000001" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">딥페이크</text>
+</g>
+<g class="node" data-id="E2" data-label="자율 무기" data-shape="rectangle">
+  <rect x="1081.991" y="179.8" width="103.453" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1133.7175" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">자율 무기</text>
+</g>
+<g class="node" data-id="E3" data-label="일자리 양극화" data-shape="rectangle">
+  <rect x="1213.444" y="179.8" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1279.9904999999999" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">일자리 양극화</text>
+</g>
+<g class="node" data-id="E4" data-label="소버린 AI" data-shape="rectangle">
+  <rect x="1374.5370000000003" y="179.8" width="100.489" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1424.7815000000003" y="198.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">소버린 AI</text>
+</g>
+</svg>

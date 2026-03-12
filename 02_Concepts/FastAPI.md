@@ -32,16 +32,7 @@ FastAPI는 **async/await** 기반의 비동기 처리로 높은 동시성을 달
 
 ## 요청 처리 흐름
 
-```mermaid
-flowchart LR
-    C[클라이언트] --> M[미들웨어\nCORS/Auth]
-    M --> R[라우터]
-    R --> D[의존성 주입\nDB/Auth]
-    D --> H[핸들러 함수]
-    H --> P[Pydantic 검증]
-    P --> RES[JSON 응답]
-    RES --> C
-```
+![Diagram 1](../assets/diagrams/02_Concepts__FastAPI__diagram_1.svg)
 
 ## 관련 개념
 
